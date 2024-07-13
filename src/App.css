@@ -1,38 +1,49 @@
-.App {
-  text-align: center;
+:root {
+  --brown-university-brown: #4E3629;
+  --text-black: #000000;
+  --background-white: #ffffff;
+}
+.separator {
+  border: 0;
+  height: 5px;
+  background: #0c0000; 
+  margin: 0;
+  padding: 0;
+}
+section {
+  padding: 20px;
+  height: 100vh; 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.section-intro {
+  background-color: var(--brown-university-brown);
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: center; 
 }
 
-.App-link {
-  color: #61dafb;
+.section-projects {
+  background-color: var(--background-white);
+  color: var(--text-black);
+  align-items: center;
+  justify-content: center; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section-experiences {
+  background-color: var(--brown-university-brown);;
+}
+
+.section-skills{
+  background-color: var(--background-white);
+  color: var(--text-black);
+}
+
+.container {
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.container h1{
+  padding: 7vh;
 }

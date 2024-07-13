@@ -1,0 +1,50 @@
+.parent-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh; 
+}
+
+.slideshow {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center; 
+}
+
+.project {
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+.arrow {
+    background-color: #e3e3e3;
+    border-radius: 50%;
+    border: none;
+    color: #333;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    position: absolute;
+}
+
+.left-arrow {
+    left: 10px;
+}
+
+.right-arrow {
+    right: 10px;
+}
+
+.arrow:hover {
+    color: #ED1C24;
+}
