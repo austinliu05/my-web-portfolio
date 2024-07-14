@@ -11,11 +11,11 @@ function App() {
     <div className="App">
       <IntroSection />
       <hr className="separator" />
+      <Skills />
+      <hr className="separator" />
       <ProjectsSections />
       <hr className="separator" />
       <ExperiencesSection />
-      <hr className="separator" />
-      <Skills />
       <hr className="separator" />
       <Footer />
     </div>

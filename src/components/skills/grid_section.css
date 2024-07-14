@@ -1,0 +1,33 @@
+.grid-section {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.grid-section h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5%;
+    justify-items: center;
+}
+
+.grid-item {
+    text-align: center;
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 8vh;
+    height: 8vh;
+    object-fit: cover;
+}
+
+.grid-item p {
+    margin-top: 10px;
+}

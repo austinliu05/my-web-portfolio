@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
                 <div className="footer-left">
                     <h3>About Me</h3>
                     <p>
-                        We are a team of passionate developers making beautiful websites.
+                        Outside of school, I love to stay active and engaged with a variety of hobbies. I frequently play fingerstyle guitar, go to the gym and play volleyball competitively.
                     </p>
                 </div>
                 <div className="footer-center">

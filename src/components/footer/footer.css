@@ -12,7 +12,8 @@
 }
 
 .footer-container div {
-    margin: 20px 0;
+    flex: 1 1 200px;
+    padding: 20px;
 }
 
 .footer h3 {

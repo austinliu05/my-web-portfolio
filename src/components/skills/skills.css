@@ -1,0 +1,12 @@
+.skills-container{
+    display: flex;
+    justify-content: center; 
+    margin-top: 20vh;
+}
+
+.icon-container{
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 5vh;
+}
