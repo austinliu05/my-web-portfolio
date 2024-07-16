@@ -3,32 +3,35 @@ import Slideshow from '../slideshow'
 
 const experienceItems = [
   {
-      title: "Kognitiv Edge",
-      role: "Back End Intern",
-      date: "March  2024 - May 2024",
-      description: "Description of Project 1",
-      imageURL: "experiences/kogedge-homepage.png",
-      websiteURL:"https://www.kognitivedge.com/",
-      videoURL:"",
+    title: "Kognitiv Edge",
+    role: "Back End Intern",
+    date: "March  2024 - May 2024",
+    description: "Developed CI/CD pipelines to ensure smooth deployments from development to production environments. Worked with various services including Azure, Terraform, and GitHub Actions.",
+    imageURL: "experiences/kogedge-homepage.png",
+    websiteURL: "https://www.kognitivedge.com/",
+    videoURL: "",
+    githubURL: ""
   },
   {
-      title: "MyDataProduct",
-      role: "Data Product Engineering Intern",
-      date: "February 2024 - May 2024",
-      description: "Description of Project 2",
-      imageURL: "experiences/mdp-logo.png",
-      websiteURL:"https://www.linkedin.com/company/mydataproduct/",
-      videoURL:"",
+    title: "MyDataProduct",
+    role: "Data Product Engineering Intern",
+    date: "February 2024 - May 2024",
+    description: "Participated in daily stand-up meetings to support agile software development. Enhanced product development by conducting SPIKEs on industry-standard APIs, designing configuration YAML files, and implementing solutions such as Google’s NLP API. Automated development operations, including scripting GCP SSL certificate renewal. Conducted Quality Assurance (QA) reviews on merge requests to enforce team practices and adherence to industry standards.",
+    imageURL: "experiences/mdp-logo.png",
+    websiteURL: "https://www.linkedin.com/company/mydataproduct/",
+    videoURL: "",
+    githubURL: ""
   },
   {
     title: "Brown Technology and Consulting Group",
     role: "VP of Technology",
     date: "September 2023 - Current",
-    description: "Description of Project 2",
+    description: "Oversee the club’s website (using React) and provide expert guidance on all software-related inquiries. Also revamped revenue model for social media influencer marketplace startup by performing competitor analysis,assessing current value proposition, and formulating a detailed recommendation.",
     imageURL: "experiences/btcg-homepage.png",
-    websiteURL:"https://browntechnologyconsultinggroup.com/",
-    videoURL:"",
-},
+    websiteURL: "https://browntechnologyconsultinggroup.com/",
+    videoURL: "",
+    githubURL: ""
+  },
 ];
 const ExperiencesSection: React.FC = () => {
   return (
@@ -36,7 +39,7 @@ const ExperiencesSection: React.FC = () => {
       <div className='container'>
         <h1>Experiences</h1>
       </div>
-      <Slideshow items={experienceItems}/>
+      <Slideshow items={experienceItems} />
     </section>
   );
 };

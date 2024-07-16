@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./slideshow.css";
 import { ASSETS_BASE_PATH } from '../constants';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 interface Slide {
     title: string;
@@ -11,6 +12,7 @@ interface Slide {
     imageURL: string;
     websiteURL: string;
     videoURL: string;
+    githubURL: string;
 }
 
 interface SlideshowProps {
@@ -57,6 +59,13 @@ const Slideshow: React.FC<SlideshowProps> = ({ items }) => {
                             {currentItem.videoURL && (
                                 <a href={currentItem.videoURL} target="_blank" rel="noreferrer">
                                     <button className="proj-exp-button">Watch Demo</button>
+                                </a>
+                            )}
+                            {currentItem.githubURL && (
+                                <a href={currentItem.githubURL} target="_blank" rel="noreferrer">
+                                    <button className="proj-exp-button github-button">
+                                        <FontAwesomeIcon icon={faGithub} size="lg"/>
+                                    </button>
                                 </a>
                             )}
                         </div>

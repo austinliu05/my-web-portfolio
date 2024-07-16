@@ -10,15 +10,18 @@ const projectItems = [
       imageURL: "projects/findmyfood-architecture.png",
       websiteURL:"https://brownfood.netlify.app/",
       videoURL:"https://www.youtube.com/watch?v=th3U7XPuVUM",
+      githubURL: "https://github.com/austinliu05/Brown-Dining"
   },
   {
       title: "Connect 4",
       role: "Individual Contributor",
       date: "November 2023 - January 2024",
-      description: "Connect4 game featuring a player vs. AI mode where the AI's gameplay is powered with a minimax algorithm and an estimateValue function. The project was develoepd using Python and deployed with Flask on the backend and React for the frontend. Used Google Firebase to track total Wins/Losses/Draws.",
+      description: "Connect4 game featuring a player vs. AI mode where the AI's gameplay is powered with a custom minimax algorithm and an estimateValue function. The project was developed using Python and deployed with a React/Flask tech stack. Google Firebase was used to track total Wins/Losses/Draws.",
       imageURL: "projects/connect4-minimax.webp",
-      websiteURL:"",
+      websiteURL:"https://austin-connect4.netlify.app/",
       videoURL:"",
+      githubURL: "https://github.com/austinliu05/Connect4-Source-Code"
+
   },
   {
     title: "Phantom Traffic Jam Preventation",
@@ -28,6 +31,7 @@ const projectItems = [
     imageURL: "projects/unt-poster.png",
     websiteURL:"",
     videoURL:"",
+    githubURL: ""
 },
 ];
 
