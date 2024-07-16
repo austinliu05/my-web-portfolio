@@ -78,7 +78,6 @@
     font-size: 2rem;
     cursor: pointer;
     position: absolute;
-    top: 50%;
     transform: translateY(-50%);
     z-index: 2;
     height: auto;
@@ -115,6 +114,8 @@
         margin-left: 0;
     }
     .arrow {
+        background-color:#44444400;
+        color: rgb(0, 0, 0);
         transform: translateY(-50%);
         z-index: 2;
         width: 3vh;
@@ -123,9 +124,12 @@
     .left-arrow {
         left: -10px;
     }
-
     .right-arrow {
         right: -10px; 
+    }
+    .arrow:hover {
+        color: #ED1C24;
+        background-color:#44444400;
     }
     .proj-exp-button {
         margin: 5px;
