@@ -42,3 +42,12 @@
 .resume button:hover {
     color: #111;
 }
+
+@media (max-width: 800px) {
+    .resume button {
+        font-size: 13px;
+    }
+    .bio-container{
+        width: 80%;
+    }
+}

@@ -6,7 +6,7 @@ const projectItems = [
       title: "Find My Food",
       role: "Individual Contributor",
       date: "January 2024 - May 2024",
-      description: "A web application to streamline the search for preferred dining hall meals, leveraging Python web scraping on AWS Lambda for weekly menu extraction from the website. The scraped data is stored in an S3 bucket and integrated into an AWS RDS database by another Lambda function. The RDS is automatically turned off and on using cron jobs to lower costs. A Flask backend serves the data, improving user meal selection with a voting system for popular dishes. The project showcases advanced CI/CD practices, employing Jest and Pytest within GitHub Actions for automated testing and deployment.",
+      description: "A web application that streamlines the search for dining hall meals. The web scraping functionality leverages AWS Lambda, and uploads information to a AWS RDS instance, which is has been optimized with a cron job to lower monthly costs. The project employs Jest and Pytest within GitHub Actions for automated testing and deployment.",
       imageURL: "projects/findmyfood-architecture.png",
       websiteURL:"https://brownfood.netlify.app/",
       videoURL:"https://www.youtube.com/watch?v=th3U7XPuVUM",
