@@ -54,6 +54,10 @@ section {
 
 
 @media (max-width: 800px) {
+  section{
+    padding: 20px;
+    box-sizing: border-box; 
+  }
   .section-skills{
     display: none;
   }
