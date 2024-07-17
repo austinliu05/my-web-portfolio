@@ -6,6 +6,7 @@ const languages = [
     { name: 'C++', imageUrl: 'languages/c++.png' },
     { name: 'Java', imageUrl: 'languages/java.png' },
     { name: 'Typescript', imageUrl: 'languages/typescript.png' },
+    { name: 'Javascript', imageUrl: 'languages/javascript.png' }
 ];
 
 const frameworks = [
@@ -15,6 +16,7 @@ const frameworks = [
 
 const tools = [
     { name: 'GitHub', imageUrl: 'tools/github.png' },
+    { name: 'GitLab', imageUrl: 'tools/gitlab.png' },
     { name: 'Firebase', imageUrl: 'tools/firebase.png' },
     { name: 'AWS', imageUrl: 'tools/aws.webp' },
     { name: 'GCP', imageUrl: 'tools/gcp.png' },
