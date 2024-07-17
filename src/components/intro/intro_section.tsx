@@ -12,7 +12,7 @@ const IntroSection: React.FC = () => {
           </p>
           <div className="resume">
             <a
-              href="https://drive.google.com/file/d/1TZx45CviuHNNAnYpTJ2EBsj-OXCJTFEF/view?usp=drive_link"
+              href="https://drive.google.com/file/d/1-kSKl-dWupRHys6PFBgbqFdUsUIbg-6p/view?usp=drive_link"
               rel="noreferrer"
               target="_blank"
             >
