@@ -5,8 +5,8 @@ const languages = [
     { name: 'Python', imageUrl: 'languages/python.png' },
     { name: 'C++', imageUrl: 'languages/c++.png' },
     { name: 'Java', imageUrl: 'languages/java.png' },
-    { name: 'Typescript', imageUrl: 'languages/typescript.png' },
-    { name: 'Javascript', imageUrl: 'languages/javascript.png' }
+    { name: 'TypeScript', imageUrl: 'languages/typescript.png' },
+    { name: 'JavaScript', imageUrl: 'languages/javascript.png' }
 ];
 
 const frameworks = [
