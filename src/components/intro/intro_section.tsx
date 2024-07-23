@@ -12,8 +12,8 @@ const IntroSection: React.FC = () => {
           </p>
           <div className="resume">
             <a
-              href="https://drive.google.com/file/d/1TZx45CviuHNNAnYpTJ2EBsj-OXCJTFEF/view?usp=drive_link"
-              rel="noreferrer"
+              href={`${process.env.PUBLIC_URL}/assets/AustinLiuResume.pdf`}
+              rel="noopener noreferrer"
               target="_blank"
             >
               <button>RESUME</button>
