@@ -71,10 +71,10 @@
 }
 
 .arrow {
-    background-color: #e3e3e3a9;
+    background-color: #ffffff00;
     border-radius: 50%;
     border: none;
-    color: #333;
+    color: #636363;
     font-size: 2rem;
     cursor: pointer;
     position: absolute;
@@ -94,7 +94,6 @@
 
 .arrow:hover {
     color: #ED1C24;
-    background-color: #9b9b9ba9;
 }
 
 /* Responsive Design */
@@ -115,7 +114,6 @@
     }
     .arrow {
         background-color:#44444400;
-        color: rgb(0, 0, 0);
         transform: translateY(-50%);
         z-index: 2;
         width: 3vh;
