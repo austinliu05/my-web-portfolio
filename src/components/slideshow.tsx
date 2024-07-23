@@ -45,7 +45,7 @@ const Slideshow: React.FC<SlideshowProps> = ({ items }) => {
                     &#10094;
                 </button>
                 <div className="proj-exp">
-                    <img src={`${ASSETS_BASE_PATH}${currentItem.imageURL}`} alt={currentItem.title} />
+                    <img src={`${ASSETS_BASE_PATH}${currentItem.imageURL}`} alt='austinliu' />
                     <div className="slideshow-metadata">
                         <h2>{currentItem.title}</h2>
                         <p>{currentItem.role}    •   {currentItem.date}</p>
