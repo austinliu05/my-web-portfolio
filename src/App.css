@@ -20,7 +20,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center; 
-  background-image: url('assets/brown.png'); 
+  background-image: url('brown.png'); 
   background-repeat: repeat;
   background-size: 150px 150px; 
   background-position: center;
