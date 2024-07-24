@@ -6,7 +6,7 @@ const experienceItems = [
     title: "Stealth Startup",
     role: "Back End Developer",
     date: "June  2024 - Current",
-    description: "Quickly developing an MVP for a stealth startup, with a primary focus on backend architecture. Programmed front-end buttons to connect with a Flask server, and integrated the ChatGPT API and Firebase to store valuable user information.",
+    description: "Developing MVP for a stealth startup, with a primary focus on backend architecture. Programmed front-end buttons to connect with a Flask server, and integrated the ChatGPT API and Firebase to store valuable user information.",
     imageURL: "experiences/bonsai-architecture.png",
     websiteURL: "https://www.kognitivedge.com/",
     videoURL: "",
