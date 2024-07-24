@@ -3,6 +3,16 @@ import Slideshow from '../slideshow'
 
 const experienceItems = [
   {
+    title: "Stealth Startup",
+    role: "Back End Developer",
+    date: "June  2024 - Current",
+    description: "Quickly developing an MVP for a stealth startup, with a primary focus on backend architecture. Programmed front-end buttons to connect with a Flask server, and integrated the ChatGPT API and Firebase to store valuable user information.",
+    imageURL: "experiences/bonsai-architecture.png",
+    websiteURL: "https://www.kognitivedge.com/",
+    videoURL: "",
+    githubURL: ""
+  },
+  {
     title: "Kognitiv Edge",
     role: "Back End Intern",
     date: "March  2024 - May 2024",
