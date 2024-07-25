@@ -8,7 +8,7 @@ const experienceItems = [
     date: "June  2024 - Current",
     description: "Developing MVP for a stealth startup, with a primary focus on backend architecture. Programmed front-end functionalities to make GET/POST requests to the Flask server, which has ChatGPT API and Firebase integration.",
     imageURL: "experiences/bonsai-architecture.png",
-    websiteURL: "https://www.kognitivedge.com/",
+    websiteURL: "",
     videoURL: "",
     githubURL: ""
   },
