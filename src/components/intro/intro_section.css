@@ -1,11 +1,24 @@
 :root {
     --brown-university-red: #ED1C24;
 }
+
+.headshot-container {
+    display: inline-block;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    margin: 5vh;
+    width: 60%;
+}
+.headshot {
+    width: 100%;
+    border-radius: 15px;
+}
 .bio-container {
-    width: 33.33%; 
-    text-align: center; 
+    width: 33.33%;
+    text-align: center;
     color: #fff;
 }
+
 .resume button {
     padding: 0.8em 1.8em;
     border: 2px solid var(--brown-university-red);
@@ -47,7 +60,8 @@
     .resume button {
         font-size: 13px;
     }
-    .bio-container{
+
+    .bio-container {
         width: 80%;
     }
 }
