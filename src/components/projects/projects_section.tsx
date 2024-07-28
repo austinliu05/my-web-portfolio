@@ -8,7 +8,7 @@ const projectItems = [
       date: "June 2024 - Current",
       description: "As an avid guitarist, I've decided to take on the challenge of designing a custom neural network to automatically transpose any song into guitar tabs from the audio file. I am currently focusing on creating a Convolutional Neural Network (CNN) to transpose standard music sheets into guitar tabs first.",
       imageURL: "projects/work-in-progress.jpg",
-      websiteURL:"https://www.kaggle.com/code/apoxieforest/guitar-fingerstyle-transformer",
+      websiteURL:"https://colab.research.google.com/drive/1R9pN-a3-Z9WGI7XIeH604A-YxM03K-WY?usp=sharing",
       videoURL:"",
       githubURL: ""
   },
