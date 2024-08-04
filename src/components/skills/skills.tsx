@@ -12,6 +12,7 @@ const languages = [
 const frameworks = [
     { name: 'Flask', imageUrl: 'frameworks/react.png' },
     { name: 'React', imageUrl: 'frameworks/flask.jpg' },
+    {name: 'NodeJS', imageUrl: 'frameworks/nodejs.png'}
 ];
 
 const tools = [
