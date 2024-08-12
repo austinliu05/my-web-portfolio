@@ -21,6 +21,7 @@ const tools = [
     { name: 'Firebase', imageUrl: 'tools/firebase.png' },
     { name: 'AWS', imageUrl: 'tools/aws.webp' },
     { name: 'GCP', imageUrl: 'tools/gcp.png' },
+    { name: 'Postman', imageUrl: 'tools/postman.jpg'}
 ];
 
 const SkillsSection: React.FC = () => {
