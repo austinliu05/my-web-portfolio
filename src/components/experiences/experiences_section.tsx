@@ -6,7 +6,7 @@ const experienceItems = [
     title: "Stealth Startup",
     role: "Back End Developer",
     date: "June  2024 - Current",
-    description: "Developing MVP for a stealth startup, with a primary focus on backend architecture. Programmed front-end functionalities to make GET/POST requests to the Flask server, which has ChatGPT API and Firebase integration.",
+    description: "Developed an MVP for a stealth startup, primarily focusing on backend architecture. Implemented full CRUD functionalities within the application, enabling seamless management of data through NodeJS server. The backend was integrated with ChatGPT 's API for advanced smoothie personalization, Edamam's API for nutritional data, and Firebase for secure, real-time database storage and user authentication.",
     imageURL: "experiences/bonsai-architecture.png",
     websiteURL: "",
     videoURL: "",
