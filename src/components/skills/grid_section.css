@@ -6,13 +6,13 @@
 
 .grid-section h2 {
     margin-bottom: 20px;
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+    gap: 10px;
     justify-items: center;
     max-width: 1000px;
     margin: 0 auto;
@@ -28,10 +28,10 @@
 }
 
 .grid-item img {
-    width: 8vh;
-    height: 8vh;
+    width: 6vh;
+    height: 6vh;
     object-fit: cover;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .grid-item p {

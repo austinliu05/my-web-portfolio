@@ -8,20 +8,23 @@ const languages = [
     { name: 'TypeScript', imageUrl: 'languages/typescript.png' },
     { name: 'JavaScript', imageUrl: 'languages/javascript.png' }
 ];
-
-const frameworks = [
-    { name: 'Flask', imageUrl: 'frameworks/react.png' },
-    { name: 'React', imageUrl: 'frameworks/flask.jpg' },
-    {name: 'NodeJS', imageUrl: 'frameworks/nodejs.png'},
-    {name: 'Bootstrap', imageUrl: 'frameworks/bootstrap.svg'}
+const web_development = [
+    { name: 'Flask', imageUrl: 'web_development/react.png' },
+    { name: 'React', imageUrl: 'web_development/flask.jpg' },
+    {name: 'NodeJS', imageUrl: 'web_development/nodejs.png'},
+    {name: 'Bootstrap', imageUrl: 'web_development/bootstrap.svg'}
 ];
-
+const ML_libs = [
+    { name: 'OpenCV', imageUrl: 'ML_libs/opencv.jpeg' },
+    { name: 'Tensorflow', imageUrl: 'ML_libs/tensorflow.jpg' },
+    {name: 'Keras', imageUrl: 'ML_libs/keras.png'},
+];
 const tools = [
-    { name: 'GitHub', imageUrl: 'tools/github.png' },
-    { name: 'GitLab', imageUrl: 'tools/gitlab.png' },
     { name: 'Firebase', imageUrl: 'tools/firebase.png' },
     { name: 'AWS', imageUrl: 'tools/aws.webp' },
     { name: 'GCP', imageUrl: 'tools/gcp.png' },
+    { name: 'GitHub', imageUrl: 'tools/github.png' },
+    { name: 'GitLab', imageUrl: 'tools/gitlab.png' },
     { name: 'Postman', imageUrl: 'tools/postman.jpg'}
 ];
 
@@ -33,7 +36,8 @@ const SkillsSection: React.FC = () => {
             </div>
             <div className='icon-container'>
                 <GridSection title="Languages" items={languages} />
-                <GridSection title="Frameworks" items={frameworks} />
+                <GridSection title="Web Development" items={web_development} />
+                <GridSection title="Machine Learning" items={ML_libs} />
                 <GridSection title="Tools" items={tools} />
             </div>
         </section>
