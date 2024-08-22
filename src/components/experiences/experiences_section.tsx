@@ -4,7 +4,7 @@ import Slideshow from '../slideshow'
 const experienceItems = [
   {
     title: "Stealth Startup",
-    role: "Back End Developer",
+    role: "Software Engineer Intern",
     date: "June  2024 - Current",
     description: "Developed an MVP for a stealth startup, primarily focusing on backend architecture. Implemented full CRUD functionalities within the application, enabling seamless management of data through NodeJS server. The backend was integrated with ChatGPT 's API for advanced smoothie personalization, Edamam's API for nutritional data, and Firebase for secure, real-time database storage and user authentication.",
     imageURL: "experiences/bonsai-architecture.png",
