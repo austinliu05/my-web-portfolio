@@ -9,7 +9,7 @@ const experienceItems = [
     description: "Developed an MVP for a stealth startup, primarily focusing on backend architecture. Implemented full CRUD functionalities within the application, enabling seamless management of data through NodeJS server. The backend was integrated with ChatGPT 's API for advanced smoothie personalization, Edamam's API for nutritional data, and Firebase for secure, real-time database storage and user authentication.",
     imageURL: "experiences/bonsai-architecture.png",
     websiteURL: "",
-    videoURL: "https://youtube.com/shorts/l5FU7mDd_jI?feature=share",
+    videoURL: "https://www.youtube.com/watch?v=rdxR_WoPFOo",
     githubURL: ""
   },
   {
