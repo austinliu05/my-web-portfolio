@@ -9,8 +9,8 @@ const languages = [
     { name: 'JavaScript', imageUrl: 'languages/javascript.png' }
 ];
 const web_development = [
-    { name: 'Flask', imageUrl: 'web_development/react.png' },
-    { name: 'React', imageUrl: 'web_development/flask.jpg' },
+    { name: 'React', imageUrl: 'web_development/react.png' },
+    { name: 'Flask', imageUrl: 'web_development/flask.jpg' },
     {name: 'NodeJS', imageUrl: 'web_development/nodejs.png'},
     {name: 'Bootstrap', imageUrl: 'web_development/bootstrap.svg'}
 ];
