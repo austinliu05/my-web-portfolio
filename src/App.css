@@ -55,7 +55,7 @@ section {
 }
 
 
-@media (max-width: 800px) {
+@media (max-width: 1000px) {
   section{
     padding: 20px;
     box-sizing: border-box; 
