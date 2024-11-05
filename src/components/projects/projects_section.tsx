@@ -3,6 +3,16 @@ import Slideshow from '../slideshow'
 
 const projectItems = [
   {
+    title: "Find My Food",
+    role: "Individual Contributor",
+    date: "January 2024 - May 2024",
+    description: "A web application that streamlines the search for dining hall meals. The web scraping functionality leverages AWS Lambda, and uploads information to a AWS RDS instance, which is has been optimized with a cron job to lower monthly costs. The project employs Jest and Pytest within GitHub Actions for automated testing and deployment.",
+    imageURL: "projects/findmyfood-architecture.png",
+    websiteURL: "https://brownfood.netlify.app/",
+    videoURL: "https://www.youtube.com/watch?v=th3U7XPuVUM",
+    githubURL: "https://github.com/austinliu05/Brown-Dining"
+  },
+  {
     title: "WordHunt Online",
     role: "Individual Contributor",
     date: "November 2024 - Current",
@@ -21,16 +31,6 @@ const projectItems = [
     websiteURL: "https://guitar-tab-transformer.vercel.app/",
     videoURL: "",
     githubURL: "https://github.com/austinliu05/guitar-tab-transformer"
-  },
-  {
-    title: "Find My Food",
-    role: "Individual Contributor",
-    date: "January 2024 - May 2024",
-    description: "A web application that streamlines the search for dining hall meals. The web scraping functionality leverages AWS Lambda, and uploads information to a AWS RDS instance, which is has been optimized with a cron job to lower monthly costs. The project employs Jest and Pytest within GitHub Actions for automated testing and deployment.",
-    imageURL: "projects/findmyfood-architecture.png",
-    websiteURL: "https://brownfood.netlify.app/",
-    videoURL: "https://www.youtube.com/watch?v=th3U7XPuVUM",
-    githubURL: "https://github.com/austinliu05/Brown-Dining"
   },
   {
     title: "Connect 4",
