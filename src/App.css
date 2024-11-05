@@ -3,6 +3,12 @@
   --text-black: #000000;
   --background-white: #ffffff;
 }
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 .separator {
   border: 0;
   height: 5px;
@@ -12,7 +18,6 @@
 }
 section {
   padding: 20px;
-  height: 100vh; 
 }
 
 .section-intro {
@@ -24,17 +29,20 @@ section {
   background-repeat: repeat;
   background-size: 150px 150px; 
   background-position: center;
+  height: 100vh;
 }
 
 .section-skills{
   background-color: var(--background-white);
   color: var(--text-black);
+  height: 100vh;
 }
 
 .section-projects {
   background-color: var(--brown-university-brown);
   align-items: center;
   justify-content: center; 
+  height: 100vh;
 }
 
 .section-experiences {
@@ -42,6 +50,7 @@ section {
   color: var(--text-black);
   align-items: center;
   justify-content: center; 
+  height: 100vh;
 }
 
 .container {
