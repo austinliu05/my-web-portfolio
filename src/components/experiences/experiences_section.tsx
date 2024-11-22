@@ -3,6 +3,16 @@ import Slideshow from '../slideshow'
 
 const experienceItems = [
   {
+    title: "sai (Student AI)",
+    role: "Software Engineer Intern",
+    date: "November  2024 - Current",
+    description: "Designing and implementing AI-powered application to enhance learning management systems (e.g., Canvas, Blackboard). Spearheading integrations for campuses across the U.S., including Cornell, UPenn, NYU, and Dartmouth, to improve educational workflows and student engagement. Using MERN framework (MongoDB, Express.js, React.js, Node.js) to build scalable  solutions, ensuring seamless user experiences and efficient backend operations.",
+    imageURL: "experiences/sai-logo.png",
+    websiteURL: "https://sai.com.ai/",
+    videoURL: "",
+    githubURL: ""
+  },
+  {
     title: "Stealth Startup",
     role: "Software Engineer Intern",
     date: "June  2024 - August 2024",
