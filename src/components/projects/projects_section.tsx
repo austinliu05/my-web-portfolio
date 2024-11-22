@@ -25,7 +25,7 @@ const projectItems = [
   {
     title: "Guitar Tab Transformer",
     role: "Individual Contributor",
-    date: "June 2024 - Current",
+    date: "June 2024 - August 2024",
     description: "As an avid guitarist, I've decided to take on the challenge of designing a custom neural network to automatically transpose any song into guitar tabs from the audio file. I am currently focusing on creating a Convolutional Neural Network (CNN) to transpose standard music sheets into guitar tabs first.",
     imageURL: "projects/work-in-progress.jpg",
     websiteURL: "https://guitar-tab-transformer.vercel.app/",

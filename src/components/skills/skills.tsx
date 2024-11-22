@@ -12,7 +12,8 @@ const web_development = [
     { name: 'React', imageUrl: 'web_development/react.png' },
     { name: 'Flask', imageUrl: 'web_development/flask.jpg' },
     {name: 'NodeJS', imageUrl: 'web_development/nodejs.png'},
-    {name: 'Bootstrap', imageUrl: 'web_development/bootstrap.svg'}
+    {name: 'Bootstrap', imageUrl: 'web_development/bootstrap.svg'},
+    {name: 'Django', imageUrl: 'web_development/django.png'}
 ];
 const ML_libs = [
     { name: 'OpenCV', imageUrl: 'ML_libs/opencv.jpeg' },
