@@ -15,11 +15,11 @@ const projectItems = [
   {
     title: "WordHunt Online",
     role: "Individual Contributor",
-    date: "November 2024 - Current",
+    date: "October 2024 - November 2024",
     description: "Inspired by the WordHunt game on GamePigeon, I developed a lightweight web version using React, Node.js, and Firebase. The application includes core gameplay mechanics, and I’m currently working on adding AI-driven bot difficulty levels and a real-time multiplayer system.",
     imageURL: "projects/wordhunt-online.png",
     websiteURL: "https://wordhunt-online.vercel.app/",
-    videoURL: "",
+    videoURL: "https://youtu.be/tA-Wi34ySys?si=MSUBMFWukCMteQja",
     githubURL: "https://github.com/austinliu05/wordhunt-online"
   },
   {
@@ -27,7 +27,7 @@ const projectItems = [
     role: "Individual Contributor",
     date: "June 2024 - August 2024",
     description: "As an avid guitarist, I've decided to take on the challenge of designing a custom neural network to automatically transpose any song into guitar tabs from the audio file. I am currently focusing on creating a Convolutional Neural Network (CNN) to transpose standard music sheets into guitar tabs first.",
-    imageURL: "projects/work-in-progress.jpg",
+    imageURL: "projects/guitar-tab-transformer.jpeg",
     websiteURL: "https://guitar-tab-transformer.vercel.app/",
     videoURL: "",
     githubURL: "https://github.com/austinliu05/guitar-tab-transformer"
