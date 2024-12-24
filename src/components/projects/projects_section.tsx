@@ -3,14 +3,24 @@ import Slideshow from '../slideshow'
 
 const projectItems = [
   {
-    title: "Find My Food",
-    role: "Individual Contributor",
-    date: "January 2024 - May 2024",
-    description: "A web application that streamlines the search for dining hall meals. The web scraping functionality leverages AWS Lambda, and uploads information to a AWS RDS instance, which is has been optimized with a cron job to lower monthly costs. The project employs Jest and Pytest within GitHub Actions for automated testing and deployment.",
-    imageURL: "projects/findmyfood-architecture.png",
-    websiteURL: "https://brownfood.netlify.app/",
-    videoURL: "https://www.youtube.com/watch?v=th3U7XPuVUM",
-    githubURL: "https://github.com/austinliu05/Brown-Dining"
+    title: "Beya",
+    role: "Software Engineer",
+    date: "November 2024 - Current",
+    description: "Supporting small businesses with inventory management, event and locales proximity-based features, minimum-fee transactions, and analytics. Startup with my Brown friends",
+    imageURL: "projects/beya-logo.png",
+    websiteURL: "https://usebeya.com/",
+    videoURL: "",
+    githubURL: ""
+  },
+  {
+    title: "Guitar Tab Transformer",
+    role: "Researcher",
+    date: "June 2024 - Current",
+    description: "As an avid guitarist, I've decided to take on the challenge of designing a custom neural network to automatically transpose any song into guitar tabs from the audio file. I am currently collaborating with Claude Hu, a machine learning researcher at University of Virginia.",
+    imageURL: "projects/guitar-tab-transformer.jpeg",
+    websiteURL: "https://guitar-tab-transformer.vercel.app/",
+    videoURL: "",
+    githubURL: "https://github.com/austinliu05/guitar-tab-transformer"
   },
   {
     title: "WordHunt Online",
@@ -23,14 +33,14 @@ const projectItems = [
     githubURL: "https://github.com/austinliu05/wordhunt-online"
   },
   {
-    title: "Guitar Tab Transformer",
+    title: "Find My Food",
     role: "Individual Contributor",
-    date: "June 2024 - August 2024",
-    description: "As an avid guitarist, I've decided to take on the challenge of designing a custom neural network to automatically transpose any song into guitar tabs from the audio file. I am currently focusing on creating a Convolutional Neural Network (CNN) to transpose standard music sheets into guitar tabs first.",
-    imageURL: "projects/guitar-tab-transformer.jpeg",
-    websiteURL: "https://guitar-tab-transformer.vercel.app/",
-    videoURL: "",
-    githubURL: "https://github.com/austinliu05/guitar-tab-transformer"
+    date: "January 2024 - May 2024",
+    description: "A web application that streamlines the search for dining hall meals. The web scraping functionality leverages AWS Lambda, and uploads information to a AWS RDS instance, which is has been optimized with a cron job to lower monthly costs. The project employs Jest and Pytest within GitHub Actions for automated testing and deployment.",
+    imageURL: "projects/findmyfood-architecture.png",
+    websiteURL: "https://brownfood.netlify.app/",
+    videoURL: "https://www.youtube.com/watch?v=th3U7XPuVUM",
+    githubURL: "https://github.com/austinliu05/Brown-Dining"
   },
   {
     title: "Connect 4",
