@@ -4,7 +4,7 @@ import Slideshow from '../slideshow'
 const projectItems = [
   {
     title: "Beya",
-    role: "Software Engineer",
+    role: "Founding Software Engineer",
     date: "November 2024 - Current",
     description: "Supporting small businesses with inventory management, event and locales proximity-based features, minimum-fee transactions, and analytics. Startup with my Brown friends",
     imageURL: "projects/beya-logo.png",
