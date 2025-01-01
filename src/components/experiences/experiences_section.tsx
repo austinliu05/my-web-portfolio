@@ -55,7 +55,7 @@ const experienceItems = [
 ];
 const ExperiencesSection: React.FC = () => {
   return (
-    <section className="section-experiences">
+    <section id="experiences" className="section-experiences">
       <div className='container'>
         <h1>Experiences</h1>
       </div>

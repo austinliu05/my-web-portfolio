@@ -3,10 +3,14 @@
   --text-black: #000000;
   --background-white: #ffffff;
 }
+
 html, body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
+  overflow-x: hidden;  /* Prevent horizontal scrollbar */
+  overflow-y: auto;    /* Allow normal scrolling */  
+  scroll-behavior: smooth;
+  height: 100%;
 }
 
 .separator {
@@ -16,8 +20,10 @@ html, body {
   margin: 0;
   padding: 0;
 }
+
 section {
   padding: 20px;
+  flex: 1; 
 }
 
 .section-intro {
@@ -84,4 +90,12 @@ section {
   .container h1{
     padding: 10vh;
   }
+}
+
+[ext-id],
+[shadow-root]{
+  display: none !important;
+  position: fixed !important;  /* Prevent layout disruption */
+  bottom: 0;
+  z-index: 9999;
 }

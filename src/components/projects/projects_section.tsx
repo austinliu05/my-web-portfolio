@@ -66,7 +66,7 @@ const projectItems = [
 
 const ProjectsSection: React.FC = () => {
   return (
-    <section className="section-projects">
+    <section id="projects" className="section-projects">
       <div className='container'>
         <h1>Projects</h1>
       </div>

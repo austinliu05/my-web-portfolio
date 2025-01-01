@@ -31,7 +31,7 @@ const tools = [
 
 const SkillsSection: React.FC = () => {
     return (
-        <section className="section-skills">
+        <section id="skills" className="section-skills">
             <div className='skills-container'>
                 <h1>Skills</h1>
             </div>
