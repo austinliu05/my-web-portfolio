@@ -13,7 +13,8 @@ const web_development = [
     { name: 'Flask', imageUrl: 'web_development/flask.jpg' },
     {name: 'NodeJS', imageUrl: 'web_development/nodejs.png'},
     {name: 'Bootstrap', imageUrl: 'web_development/bootstrap.svg'},
-    {name: 'Django', imageUrl: 'web_development/django.png'}
+    {name: 'Django', imageUrl: 'web_development/django.png'},
+    {name: 'Tailwind CSS', imageUrl: 'web_development/tailwindcss.png'}
 ];
 const ML_libs = [
     { name: 'OpenCV', imageUrl: 'ML_libs/opencv.jpeg' },
