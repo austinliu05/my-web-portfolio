@@ -46,7 +46,7 @@
 .falling-text {
     display: inline-block;
     opacity: 0;
-    animation: fallIn 1.2s ease forwards;
+    animation: fallIn 2s ease forwards;
 }
 
 @keyframes fallIn {
@@ -60,5 +60,21 @@
     100% {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+@media (max-width: 640px) {
+    .navbar {
+        justify-content: center;  /* Center align navbar content */
+    }
+
+    .nav-logo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);  /* Center logo horizontally */
+    }
+
+    .nav-links {
+        display: none;  /* Hide nav links */
     }
 }

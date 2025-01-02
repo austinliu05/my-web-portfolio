@@ -2,33 +2,131 @@
     --brown-university-red: #ED1C24;
 }
 
-.headshot-container {
+/* Flip Card Container */
+.flip-card {
     display: inline-block;
+    width: 20%;
+    height: auto;
+    aspect-ratio: 3 / 4;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
+    /* Space between flip card and bio */
+    perspective: 1200px;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
-    margin: 5vh;
-    width: 60%;
+    transition: transform 0.3s ease, box-shadow 0.5s ease;
+    background-color: transparent;
+    cursor: pointer;
 }
+
+.flip-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7);
+}
+
+/* Inner Flip Card Animation */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s ease;
+    transform-style: preserve-3d;
+    transform-origin: center;
+}
+
+/* Apply flip when 'flipped' class is active */
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Front and Back of Flip Card */
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 15px;
+}
+
+.flip-card-back {
+    background-color: #333;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Bio Text Styling */
+.bio-text h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.bio-text p {
+    font-size: 1rem;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Headshot Styling */
 .headshot {
     width: 100%;
     border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
 }
+
+/* Bio Container - Below Flip Card */
 .bio-container {
-    width: 33.33%;
+    width: 50%;
     text-align: center;
     color: #fff;
 }
 
+.click-me-text {
+    position: absolute;
+    bottom: 15px;
+    left: 25%;
+    transform: translateX(-50%);
+    width: 40%;
+    text-align: center;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.4);
+    padding: 8px 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+    animation: fadeIn 0.6s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Resume Button */
 .resume button {
     padding: 0.8em 1.8em;
     border: 2px solid var(--brown-university-red);
-    position: relative;
-    overflow: hidden;
     background-color: transparent;
-    text-align: center;
     text-transform: uppercase;
     font-size: 16px;
-    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
     z-index: 1;
     font-family: inherit;
     color: var(--brown-university-red);
@@ -56,12 +154,70 @@
     color: #111;
 }
 
+/* Hover Text Effect */
+.hover-text span {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+}
+
+.hover-text span:hover {
+    color: var(--brown-university-red);
+    animation: titleJiggle 0.3s ease-in-out;
+    transform: translateY(-10px);
+}
+
+@keyframes titleJiggle {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-2px) rotate(-1deg);
+    }
+
+    50% {
+        transform: translateY(2px) rotate(1deg);
+    }
+
+    75% {
+        transform: translateY(-1px) rotate(-1deg);
+    }
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1300px) {
+    .flip-card {
+        width: 30%;
+    }
+}
 @media (max-width: 800px) {
-    .resume button {
-        font-size: 13px;
+    .flip-card {
+        width: 50%;
     }
 
     .bio-container {
         width: 80%;
+    }
+
+    .resume button {
+        font-size: 13px;
+    }
+}
+@media (max-width: 640px) {
+    .click-me-text {
+        font-size: small;
+    }
+    .bio-text h2 {
+        margin: 0;
+        font-size: 1rem;
+    }
+    
+    .bio-text p {
+        font-size: 0.5rem;
+        margin-top: 10px;
+        line-height: 1.5;
     }
 }

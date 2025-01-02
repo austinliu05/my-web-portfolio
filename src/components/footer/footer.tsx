@@ -5,12 +5,6 @@ const Footer: React.FC = () => {
     return (
         <footer className="footer">
             <div className="footer-container">
-                <div className="footer-left">
-                    <h3>About Me</h3>
-                    <p>
-                        Outside of school, I love to stay active and engaged with a variety of hobbies. I frequently play fingerstyle guitar, go to the gym and play volleyball competitively.
-                    </p>
-                </div>
                 <div className="footer-center">
                     <h3>Contact</h3>
                     <p>
