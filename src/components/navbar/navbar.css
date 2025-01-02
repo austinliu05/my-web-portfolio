@@ -31,6 +31,34 @@
 }
 
 .nav-logo {
-    font-size: 1.5rem;
+    height: 5vh;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
     font-weight: bold;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Falling Animation */
+.falling-text {
+    display: inline-block;
+    opacity: 0;
+    animation: fallIn 1.2s ease forwards;
+}
+
+@keyframes fallIn {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
