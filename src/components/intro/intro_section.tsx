@@ -38,7 +38,7 @@ const IntroSection: React.FC = () => {
             <div className="bio-text">
               <h2>About Me</h2>
               <p>
-                When I'm not buried in schoolwork, you'll probably find me playing competitive volleyball with Brown’s men's varsity team, jamming on my fingerstyle guitar for friends, or hunting down new foods to try.
+                When I'm not working, you'll probably find me playing volleyball on Brown’s men's varsity team, playing fingerstyle guitar for friends, or hunting down new food places to try.
               </p>
             </div>
           </div>
