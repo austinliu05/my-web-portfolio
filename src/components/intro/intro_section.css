@@ -164,7 +164,6 @@
 .hover-text span:hover {
     color: var(--brown-university-red);
     animation: titleJiggle 0.3s ease-in-out;
-    transform: translateY(-10px);
 }
 
 @keyframes titleJiggle {
