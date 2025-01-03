@@ -46,4 +46,11 @@
 .grid-item p {
     margin: 0;
     font-size: 16px;
+    opacity: 0;  /* Hide the text by default */
+    transition: opacity 0.3s ease;  /* Smooth transition for text visibility */
+    transform: translateY(5px);  /* Slight shift down */
+}
+.grid-item:hover p {
+    opacity: 1;  /* Make the text visible */
+    transform: translateY(0);  /* Bring text to original position */
 }

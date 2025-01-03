@@ -34,7 +34,7 @@ section {
   background-repeat: repeat;
   background-size: 150px 150px; 
   background-position: center;
-  height: 110vh;
+  height: 100vh;
   flex-direction: column;
 }
 
