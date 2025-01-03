@@ -21,7 +21,6 @@ function App() {
         <ExperiencesSection />
         <hr className="separator" />
       </div>
-
       <Footer />
     </div>
   );

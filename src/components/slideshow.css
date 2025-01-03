@@ -1,9 +1,17 @@
+.slideshow-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
 .slideshow-container {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 50vh;
     margin-top: 5vh;
+    flex-direction: column;  /* Stack slideshow and dots vertically */
 }
 
 .slideshow {
@@ -95,6 +103,30 @@
 .arrow:hover {
     color: #ED1C24;
 }
+.dots-container {
+    position: absolute;  /* Absolute positioning ensures fixed placement */
+    bottom: -10vh;  /* Positions dots near the bottom */
+    width: 100%;
+    text-align: center;
+}
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 6px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.dot:hover {
+    background-color: #ED1C24;
+}
+
+.active-dot {
+    background-color: #ED1C24;
+}
 
 /* Responsive Design */
 @media (max-width: 800px) {
@@ -132,5 +164,15 @@
     .proj-exp-button {
         margin: 5px;
         font-size: 10px;
+    }
+}
+@media (max-width: 640px) {
+    .dots-container {
+        bottom: -15vh;  /* Positions dots near the bottom */
+    }
+}
+@media (max-width: 300px) {
+    .dots-container {
+        bottom: -20vh;  /* Positions dots near the bottom */
     }
 }

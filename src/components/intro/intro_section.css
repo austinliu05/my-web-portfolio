@@ -10,7 +10,6 @@
     aspect-ratio: 3 / 4;
     margin-top: 10vh;
     margin-bottom: 5vh;
-    /* Space between flip card and bio */
     perspective: 1200px;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
