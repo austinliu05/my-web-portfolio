@@ -16,7 +16,7 @@
     justify-items: center;
     align-items: start;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 .grid-item {
@@ -26,12 +26,20 @@
     text-align: center;
     width: 100px;
     margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+}
+
+.grid-item:hover {
+    transform: translateY(-10px) scale(1.05);  /* Lifts the item up slightly */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);  /* Adds a shadow for a 3D effect */
 }
 
 .grid-item img {
     width: 6vh;
     height: 6vh;
     object-fit: cover;
+    padding: 5px;
     margin-bottom: 5px;
 }
 
