@@ -120,6 +120,12 @@ section {
   .section-intro {
     height: 100vh;
   }
+  .section-projects{
+    height: 120vh;
+  }
+  .section-experiences{
+    height: 120vh;
+  }
 }
 
 [ext-id],
