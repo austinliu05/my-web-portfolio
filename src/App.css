@@ -115,7 +115,17 @@ section {
     height: 80vh;
   }
 }
-
+@media (max-height: 1100px) {
+  .section-intro {
+    height: 90vh;
+  }
+  .section-projects{
+    height: 100vh;
+  }
+  .section-experiences{
+    height: 100vh;
+  }
+}
 @media (max-height: 800px) {
   .section-intro {
     height: 100vh;
