@@ -2,29 +2,19 @@ import React, { useEffect, useState } from "react";
 import "./intro_section.css";
 
 const IntroSection: React.FC = () => {
-  const [titleText, setTitleText] = useState<JSX.Element[]>([]);
+  const [showText, setShowText] = useState(false);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setShowText(true);
+    }, 500);  // Small delay before typing starts
+  }, []);
   const [bioContent, setBioContent] = useState<JSX.Element[]>([]);
   const [isFlipped, setIsFlipped] = useState(false);
 
   useEffect(() => {
-    const title = "austinliu.dev";
     const bio =
       "Hi! I'm Austin Liu, currently pursuing a dual degree in Computer Science and Economics at Brown University, with an additional focus on earning an Entrepreneurship Certificate";
-
-    // TITLE: Split into letters for continuous animation
-    const titleLetters = title.split("").map((letter, index) => (
-      <span
-        key={`title-${index}`}
-        className="hover-text-title"
-        style={{
-          animationDelay: `${index * 0.05}s`,
-          animationDuration: "10s",
-        }}
-      >
-        {letter === " " ? "\u00A0" : letter}
-      </span>
-    ));
-    setTitleText(titleLetters);
 
     // BIO: Split into words, then each word into letters, so line breaks only occur between words
     const bioWords = bio.split(" ").map((word, i) => (
@@ -36,7 +26,7 @@ const IntroSection: React.FC = () => {
         ))}
         <span>&nbsp;</span> {/* Add space between words */}
       </span>
-    )); 
+    ));
     setBioContent(bioWords);
   }, []);
 
@@ -61,11 +51,8 @@ const IntroSection: React.FC = () => {
           </div>
           <div className="flip-card-back">
             <div className="bio-text">
-              <h2>About Me</h2>
               <p>
-                When I'm not working, you'll probably find me playing volleyball on Brown’s men's
-                varsity team, playing fingerstyle guitar for friends, or hunting down new food places
-                to try.
+                When I'm not working, you'll probably find me playing volleyball with my friends, practicing fingerstyle guitar for fun, or hunting down new food places to try.
               </p>
             </div>
           </div>
@@ -74,7 +61,14 @@ const IntroSection: React.FC = () => {
 
       <div className="bio-container">
         {/* Title text with continuous animation */}
-        <h1 className="hover-text">{titleText}</h1>
+        <h1 className="hover-text">
+          {!showText &&
+            <span className="placeholder">austinliu.dev</span>
+            }
+          {showText && (
+            <span className="typewriter">austinliu.dev</span>
+          )}
+        </h1>
 
         {/* Bio text, word-wrapped */}
         <p className="bio">
