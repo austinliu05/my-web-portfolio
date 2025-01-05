@@ -7,7 +7,6 @@ const skills = [
     { name: 'C++', imageUrl: 'languages/c++.png' },
     { name: 'Java', imageUrl: 'languages/java.png' },
     { name: 'TypeScript', imageUrl: 'languages/typescript.png' },
-    { name: 'JavaScript', imageUrl: 'languages/javascript.png' },
     { name: 'React', imageUrl: 'web_development/react.png' },
     { name: 'React Expo', imageUrl: 'web_development/react-expo.png' },
     { name: 'Flask', imageUrl: 'web_development/flask.png' },
@@ -19,8 +18,6 @@ const skills = [
     { name: 'AWS', imageUrl: 'tools/aws.webp' },
     { name: 'GCP', imageUrl: 'tools/gcp.png' },
     { name: 'GitHub', imageUrl: 'tools/github.png' },
-    { name: 'Postman', imageUrl: 'tools/postman.png' },
-    { name: 'Xcode', imageUrl: 'tools/xcode.png' }
 ];
 
 const SkillsCarousel: React.FC = () => {
