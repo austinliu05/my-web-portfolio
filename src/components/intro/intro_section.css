@@ -153,14 +153,8 @@
     color: #111;
 }
 
-
-.hover-text span:hover {
-    color: var(--brown-university-red);  /* Optional hover effect for color */
-}
-
 @keyframes titleJiggle {
-    0%,
-    100% {
+    0%, 100% {
         transform: translateY(0);
     }
     25% {
@@ -173,13 +167,43 @@
         transform: translateY(-3px) rotate(-1deg);
     }
 }
+@keyframes hoverJiggle {
 
-.hover-text span {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    25% {
+        transform: translateY(-2px) rotate(-1deg);
+    }
+
+    50% {
+        transform: translateY(2px) rotate(1deg);
+    }
+
+    75% {
+        transform: translateY(-1px) rotate(-1deg);
+    }
+}
+/* Bio text hover animation */
+.hover-text-bio {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Trigger on hover */
+.hover-text-bio:hover {
+    color: var(--brown-university-red); /* Turn red on hover */
+    animation: hoverJiggle 0.3s ease-in-out;
+    cursor: pointer;
+}
+/* Continuous Stagger for Title */
+.hover-text-title {
     display: inline-block;
     animation: titleJiggle 3s ease-in-out infinite;
     transition: color 0.3s ease;
 }
-
 
 /* Responsive Adjustments */
 @media (max-width: 1300px) {

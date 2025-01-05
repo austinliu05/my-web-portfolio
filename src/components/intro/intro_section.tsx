@@ -2,28 +2,45 @@ import React, { useEffect, useState } from "react";
 import "./intro_section.css";
 
 const IntroSection: React.FC = () => {
-  const [staggeredText, setStaggeredText] = useState<JSX.Element[]>([]);
+  const [titleText, setTitleText] = useState<JSX.Element[]>([]);
+  const [bioText, setBioText] = useState<JSX.Element[]>([]);
   const [isFlipped, setIsFlipped] = useState(false);
 
   useEffect(() => {
-    const text = "austinliu.dev";
-    const letters = text.split("").map((letter, index) => (
+    const title = "austinliu.dev";
+    const bio = "Hi! I'm Austin Liu, currently pursuing a dual degree in Computer Science and Economics at Brown University, with an additional focus on earning an Entrepreneurship Certificate";
+
+    const titleLetters = title.split("").map((letter, index) => (
       <span
-        key={index}
-        className="hover-text"
+        key={`title-${index}`}
+        className="hover-text-title"
         style={{
-          animationDelay: `${index * 0.15}s`,  // Increased delay for stronger stagger
-          animationDuration: "5s",            // Uniform duration for smoother wave
+          animationDelay: `${index * 0.05}s`,
+          animationDuration: "10s",
         }}
       >
         {letter === " " ? "\u00A0" : letter}
       </span>
     ));
-    setStaggeredText(letters);
+
+    const bioLetters = bio.split("").map((letter, index) => (
+      <span
+        key={`bio-${index}`}
+        className="hover-text-bio"
+        style={{
+          transitionDelay: `0s`,  // Stagger the hover effect
+        }}
+      >
+        {letter === " " ? "\u00A0" : letter}
+      </span>
+    ));
+
+    setTitleText(titleLetters);
+    setBioText(bioLetters);
   }, []);
 
   const handleCardClick = () => {
-    setIsFlipped((prev) => !prev);  // Toggle the flip state
+    setIsFlipped((prev) => !prev);
   };
 
   return (
@@ -39,7 +56,7 @@ const IntroSection: React.FC = () => {
               src={`${process.env.PUBLIC_URL}/assets/headshot.jpg`}
               alt="Austin Liu"
             />
-            <div className="click-me-text">About Me</div> {/* Click Me Text */}
+            <div className="click-me-text">About Me</div>
           </div>
           <div className="flip-card-back">
             <div className="bio-text">
@@ -51,11 +68,11 @@ const IntroSection: React.FC = () => {
           </div>
         </div>
       </div>
+
       <div className="bio-container">
-        <h1 className="hover-text">{staggeredText}</h1>
+        <h1 className="hover-text">{titleText}</h1>
         <p className="bio py-2">
-          Hi! I'm Austin Liu, currently pursuing a dual degree in Computer Science and Economics at
-          Brown University, with an additional focus on earning an Entrepreneurship Certificate.
+          {bioText}
         </p>
         <div className="resume">
           <a
