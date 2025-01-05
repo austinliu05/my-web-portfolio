@@ -1,0 +1,147 @@
+.skills-carousel {
+    width: 100%;
+    overflow: hidden;  /* Hide overflow for clean look */
+    white-space: nowrap;
+    background-color: #ffffff;
+    padding: 20px 0;
+}
+
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;  /* Start from the left */
+    position: relative;
+}
+
+.skills-carousel .carousel {
+    display: flex;
+    align-items: center;
+    animation: scroll 40s linear infinite;
+    width: calc(100% * 2);  /* Ensure full width coverage */
+    min-width: fit-content;
+}
+
+.carousel-item {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 20px;
+    width: 60px;
+    height: 100px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.carousel-item img {
+    width: 6vh;
+    height: 6vh;
+    object-fit: contain;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+/* Tooltip for Larger Screens */
+.tooltip {
+    position: absolute;
+    bottom: 110%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(5px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect - Icons Rise */
+.carousel-item:hover img {
+    transform: translateY(-15px) scale(1.1);
+}
+
+/* Show Tooltip on Hover (Larger Screens) */
+.carousel-item:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+/* Title Styling */
+.skills-title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.skills-title h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin: 0;
+}
+
+/* Animation for Infinite Scroll */
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Hover Pause Effect */
+.skills-carousel .carousel:hover {
+    animation-play-state: paused;
+}
+
+/* Faster Scroll for Smaller Screens */
+@media (max-width: 768px) {
+    .skills-carousel .carousel {
+        animation: scroll 30s linear infinite;
+    }
+    .carousel-item:hover img {
+        transform: none;
+    }
+    .carousel-item:hover .tooltip {
+        opacity: 0;
+        visibility: hidden;
+    }
+    .skills-carousel .carousel:hover {
+        animation-play-state: running;
+    }
+}
+
+/* Text Next to Icon for Smaller Screens */
+@media (max-width: 480px) {
+    .carousel-item {
+        flex-direction: row;  /* Icon and text in a row */
+        width: auto;
+        height: auto;
+        align-items: center;
+        margin: 10px 15px;
+    }
+
+    .carousel-item img {
+        width: 5vh;
+        height: 5vh;
+        margin-right: 10px;
+    }
+
+    .tooltip {
+        position: static;
+        opacity: 1;
+        visibility: visible;
+        background-color: transparent;
+        color: black;
+        font-size: 14px;
+        padding: 0;
+        transform: none;
+        margin-top: 0;
+    }
+
+    .carousel-item:hover img {
+        transform: none;
+    }
+}

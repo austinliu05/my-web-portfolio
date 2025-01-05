@@ -10,11 +10,11 @@
 .grid-container {
     display: grid;
     grid-template-columns: repeat(2 , 1fr);
-    gap: 10px;
+    gap: 5px;
     justify-items: center;
     align-items: start;
-    max-width: 1000px;
-    margin: 10px auto;
+    max-width: 200px;
+    margin: 20px auto;
 }
 
 .grid-item {
@@ -22,15 +22,9 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    width: 100px;
+    width: 80px;
     margin-bottom: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 10px;
-}
-
-.grid-item:hover {
-    transform: translateY(-10px) scale(1.05);  /* Lifts the item up slightly */
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);  /* Adds a shadow for a 3D effect */
+    position: relative;  /* For tooltip positioning */
 }
 
 .grid-item img {
@@ -39,16 +33,34 @@
     object-fit: cover;
     padding: 5px;
     margin-bottom: 5px;
+    transition: transform 0.3s ease, filter 0.3s ease;  /* Smooth hover effect */
 }
 
-.grid-item p {
-    margin: 0;
-    font-size: 16px;
-    opacity: 0;  /* Hide the text by default */
-    transition: opacity 0.3s ease;  /* Smooth transition for text visibility */
-    transform: translateY(5px);  /* Slight shift down */
+/* Tooltip Styling */
+.tooltip {
+    position: absolute;
+    bottom: 110%;  /* Position the tooltip above the image */
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(5px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
-.grid-item:hover p {
-    opacity: 1;  /* Make the text visible */
-    transform: translateY(0);  /* Bring text to original position */
+
+/* Hover Effects (Only icon rises) */
+.grid-item:hover img {
+    transform: translateY(-10px) scale(1.05);  /* Slight lift on hover */
+    filter: grayscale(0) brightness(0.5) sepia(1) hue-rotate(200deg);  /* Color change */
+}
+
+/* Show Tooltip on Hover */
+.grid-item:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }

@@ -10,15 +10,15 @@ const languages = [
 ];
 const web_development = [
     { name: 'React', imageUrl: 'web_development/react.png' },
-    { name: 'Flask', imageUrl: 'web_development/flask.jpg' },
+    { name: 'Flask', imageUrl: 'web_development/flask.png' },
     {name: 'NodeJS', imageUrl: 'web_development/nodejs.png'},
     {name: 'Bootstrap', imageUrl: 'web_development/bootstrap.svg'},
     {name: 'Django', imageUrl: 'web_development/django.png'},
     {name: 'Tailwind CSS', imageUrl: 'web_development/tailwindcss.png'}
 ];
 const ML_libs = [
-    { name: 'OpenCV', imageUrl: 'ML_libs/opencv.jpeg' },
-    { name: 'Tensorflow', imageUrl: 'ML_libs/tensorflow.jpg' },
+    { name: 'OpenCV', imageUrl: 'ML_libs/opencv.png' },
+    { name: 'Tensorflow', imageUrl: 'ML_libs/tensorflow.png' },
     {name: 'Keras', imageUrl: 'ML_libs/keras.png'},
 ];
 const tools = [
@@ -27,7 +27,7 @@ const tools = [
     { name: 'GCP', imageUrl: 'tools/gcp.png' },
     { name: 'GitHub', imageUrl: 'tools/github.png' },
     { name: 'GitLab', imageUrl: 'tools/gitlab.png' },
-    { name: 'Postman', imageUrl: 'tools/postman.jpg'}
+    { name: 'Postman', imageUrl: 'tools/postman.png'}
 ];
 
 const SkillsSection: React.FC = () => {

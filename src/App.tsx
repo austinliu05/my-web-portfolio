@@ -6,6 +6,7 @@ import ExperiencesSection from './components/experiences/experiences_section';
 import Skills from './components/skills/skills'
 import Footer from './components/footer/footer'
 import Navbar from './components/navbar/navbar';
+import SkillsCarousel from './components/skills/skills_carousel';
 
 function App() {
   return (
@@ -14,7 +15,9 @@ function App() {
       <div>
         <IntroSection />
         <hr className="separator" />
-        <Skills />
+        <SkillsCarousel/>
+        {/* <hr className="separator" />
+        <Skills /> */}
         <hr className="separator" />
         <ProjectsSections />
         <hr className="separator" />

@@ -5,6 +5,7 @@ import { ASSETS_SKILLS_BASE_PATH } from '../../constants';
 interface GridItem {
     name: string;
     imageUrl: string;
+    tooltip?: string;  // Optional tooltip text
 }
 
 interface GridSectionProps {
@@ -20,7 +21,9 @@ const GridSection: React.FC<GridSectionProps> = ({ title, items }) => {
                 {items.map((item, index) => (
                     <div className="grid-item" key={index}>
                         <img src={`${ASSETS_SKILLS_BASE_PATH}${item.imageUrl}`} alt={item.name} />
-                        <p>{item.name}</p>
+                        {item.name && (
+                            <div className="tooltip">{item.name}</div>  // Tooltip for hover
+                        )}
                     </div>
                 ))}
             </div>
