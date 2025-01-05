@@ -104,10 +104,6 @@
     .carousel-item:hover img {
         transform: none;
     }
-    .carousel-item:hover .tooltip {
-        opacity: 0;
-        visibility: hidden;
-    }
     .skills-carousel .carousel:hover {
         animation-play-state: running;
     }
