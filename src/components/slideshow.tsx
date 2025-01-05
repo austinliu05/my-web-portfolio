@@ -45,7 +45,7 @@ const Slideshow: React.FC<SlideshowProps> = ({ items }) => {
     return (
         <div className="slideshow-wrapper">
             <Carousel
-                showStatus={false}
+                showStatus={true}
                 showIndicators={true}
                 showThumbs={false}
                 infiniteLoop={true}
