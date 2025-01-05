@@ -67,7 +67,7 @@
 .click-me-text {
     position: absolute;
     bottom: 15px;
-    left: 50%;
+    left: 25%;
     transform: translateX(-50%);
     width: 40%;
     text-align: center;
