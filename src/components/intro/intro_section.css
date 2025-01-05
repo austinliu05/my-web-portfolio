@@ -153,37 +153,33 @@
     color: #111;
 }
 
-/* Hover Text Effect */
-.hover-text span {
-    display: inline-block;
-    transition: transform 0.3s ease, color 0.3s ease;
-    cursor: pointer;
-}
 
 .hover-text span:hover {
-    color: var(--brown-university-red);
-    animation: titleJiggle 0.3s ease-in-out;
+    color: var(--brown-university-red);  /* Optional hover effect for color */
 }
 
 @keyframes titleJiggle {
-
     0%,
     100% {
         transform: translateY(0);
     }
-
     25% {
-        transform: translateY(-2px) rotate(-1deg);
+        transform: translateY(-4px) rotate(-1deg);
     }
-
     50% {
-        transform: translateY(2px) rotate(1deg);
+        transform: translateY(6px) rotate(2deg);
     }
-
     75% {
-        transform: translateY(-1px) rotate(-1deg);
+        transform: translateY(-3px) rotate(-1deg);
     }
 }
+
+.hover-text span {
+    display: inline-block;
+    animation: titleJiggle 3s ease-in-out infinite;
+    transition: color 0.3s ease;
+}
+
 
 /* Responsive Adjustments */
 @media (max-width: 1300px) {

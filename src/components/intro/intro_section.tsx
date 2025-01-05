@@ -8,7 +8,14 @@ const IntroSection: React.FC = () => {
   useEffect(() => {
     const text = "austinliu.dev";
     const letters = text.split("").map((letter, index) => (
-      <span key={index} className="hover-text" style={{ transitionDelay: '0s' }}>
+      <span
+        key={index}
+        className="hover-text"
+        style={{
+          animationDelay: `${index * 0.15}s`,  // Increased delay for stronger stagger
+          animationDuration: "5s",            // Uniform duration for smoother wave
+        }}
+      >
         {letter === " " ? "\u00A0" : letter}
       </span>
     ));
