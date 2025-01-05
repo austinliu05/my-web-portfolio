@@ -117,7 +117,7 @@ section {
 }
 @media (max-height: 1100px) {
   .section-intro {
-    height: 90vh;
+    height: 100vh;
   }
   .section-projects{
     height: 100vh;

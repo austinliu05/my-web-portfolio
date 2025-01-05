@@ -5,7 +5,7 @@ const projectItems = [
   {
     title: "Beya",
     role: "Founding Software Engineer",
-    date: "November 2024 - Current",
+    date: "Nov. 2024 - Current",
     description: "Supporting small businesses with inventory management, event and locales proximity-based features, minimum-fee transactions, and analytics. Startup with my Brown friends",
     imageURL: "projects/beya-logo.png",
     websiteURL: "https://usebeya.com/",
@@ -25,7 +25,7 @@ const projectItems = [
   {
     title: "WordHunt Online",
     role: "Individual Contributor",
-    date: "October 2024 - November 2024",
+    date: "Oct. 2024 - Nov. 2024",
     description: "Inspired by the WordHunt game on GamePigeon, I developed a lightweight web version using React, Node.js, and Firebase. The application includes core gameplay mechanics, and I’m currently working on adding AI-driven bot difficulty levels and a real-time multiplayer system.",
     imageURL: "projects/wordhunt-online.png",
     websiteURL: "https://wordhunt-online.vercel.app/",
@@ -35,7 +35,7 @@ const projectItems = [
   {
     title: "Find My Food",
     role: "Individual Contributor",
-    date: "January 2024 - May 2024",
+    date: "Jan. 2024 - May 2024",
     description: "A web application that streamlines the search for dining hall meals. The web scraping functionality leverages AWS Lambda, and uploads information to a AWS RDS instance, which is has been optimized with a cron job to lower monthly costs. The project employs Jest and Pytest within GitHub Actions for automated testing and deployment.",
     imageURL: "projects/findmyfood-architecture.png",
     websiteURL: "https://brownfood.netlify.app/",
@@ -45,7 +45,7 @@ const projectItems = [
   {
     title: "Connect 4",
     role: "Individual Contributor",
-    date: "November 2023 - January 2024",
+    date: "Nov. 2023 - Jan. 2024",
     description: "Connect4 game featuring a player vs. AI mode where the AI's gameplay is powered with a custom minimax algorithm and an estimateValue function. The project was developed using Python and deployed with a React/Flask tech stack. Google Firebase was used to track total Wins/Losses/Draws.",
     imageURL: "projects/connect4-minimax.webp",
     websiteURL: "https://austin-connect4.netlify.app/",
@@ -55,8 +55,8 @@ const projectItems = [
   {
     title: "Phantom Traffic Jam Preventation",
     role: "Researcher",
-    date: "August 2021 - May 2023",
-    description: "Acquired fundamental expertise in ROS via UPenn's F1tenth Course, mastering Reactive Methods like Wall Following, Follow the Gap, and PID Controller. Initially implemented these techniques in a simulator, then progressed to real F1tenth vehicles. Subsequently developed the 'Phantom Traffic Jam Prevention Project' for an undergraduate research competition, aimed at alleviating road congestion by applying the learned concepts.",
+    date: "Aug. 2021 - May 2023",
+    description: "Using UPenn's F1tenth Course, mastered Reactive Methods like Wall Following, Follow the Gap, and PID Controller. Implemented these techniques in a simulator, then progressed to real F1tenth vehicles. Subsequently developed the 'Phantom Traffic Jam Prevention Project' for an undergraduate research competition.",
     imageURL: "projects/unt-poster.png",
     websiteURL: "",
     videoURL: "",

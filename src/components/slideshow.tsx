@@ -1,20 +1,20 @@
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import React from "react";
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // carousel styles
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
-import "./slideshow.css";  // your existing stylesheet
+import "./slideshow.css";
 import { ASSETS_BASE_PATH } from "../constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
 interface Slide {
     title: string;
     description: string;
-    role: string;
-    date: string;
+    role?: string;
+    date?: string;
     imageURL: string;
-    websiteURL: string;
-    videoURL: string;
-    githubURL: string;
+    websiteURL?: string;
+    githubURL?: string;
 }
 
 interface SlideshowProps {
@@ -22,44 +22,64 @@ interface SlideshowProps {
 }
 
 const Slideshow: React.FC<SlideshowProps> = ({ items }) => {
+    const renderArrowPrev = (onClickHandler: () => void, hasPrev: boolean) => (
+        <button
+            className={`custom-arrow custom-arrow-left ${hasPrev ? "" : "disabled"}`}
+            onClick={onClickHandler}
+            aria-label="Previous Slide"
+        >
+            <FontAwesomeIcon icon={faChevronLeft} />
+        </button>
+    );
+
+    const renderArrowNext = (onClickHandler: () => void, hasNext: boolean) => (
+        <button
+            className={`custom-arrow custom-arrow-right ${hasNext ? "" : "disabled"}`}
+            onClick={onClickHandler}
+            aria-label="Next Slide"
+        >
+            <FontAwesomeIcon icon={faChevronRight} />
+        </button>
+    );
+
     return (
         <div className="slideshow-wrapper">
             <Carousel
-                // Some handy props:
-                showArrows={false}
-                showStatus={true}        // hides the "1 of N" status
-                showIndicators={true}     // show dots (indicators)
-                showThumbs={false}        // no thumbnail images
+                showStatus={false}
+                showIndicators={true}
+                showThumbs={false}
                 infiniteLoop={true}
-                autoPlay={false}          // set to true if you'd like to autoplay
+                autoPlay={false}
                 interval={5000}
                 transitionTime={600}
                 swipeable={true}
                 emulateTouch={true}
                 useKeyboardArrows={true}
+                renderArrowPrev={renderArrowPrev}
+                renderArrowNext={renderArrowNext}
             >
                 {items.map((item, index) => (
                     <div key={index} className="carousel-slide">
-                        <div className="proj-exp">
+                        <div className="slide-content">
                             <img
                                 src={`${ASSETS_BASE_PATH}${item.imageURL}`}
                                 alt={item.title}
                             />
-                            <div className="slideshow-metadata">
+                            <div className="slide-metadata">
                                 <h2>{item.title}</h2>
-                                <p>
-                                    {item.role} • {item.date}
-                                </p>
+                                {item.role && item.date && (
+                                    <p>{item.role} • {item.date}</p>
+                                )}
                                 <p>{item.description}</p>
 
-                                <div className="proj-exp-buttons">
+                                <div className="slide-buttons">
                                     {item.websiteURL && (
                                         <a
                                             href={item.websiteURL}
                                             target="_blank"
                                             rel="noreferrer"
                                         >
-                                            <button className="proj-exp-button">
+                                            <button className="slideshow-button">
                                                 Visit Website
                                             </button>
                                         </a>
@@ -70,7 +90,7 @@ const Slideshow: React.FC<SlideshowProps> = ({ items }) => {
                                             target="_blank"
                                             rel="noreferrer"
                                         >
-                                            <button className="proj-exp-button github-button">
+                                            <button className="slideshow-button github-button">
                                                 <FontAwesomeIcon icon={faGithub} size="lg" />
                                             </button>
                                         </a>
