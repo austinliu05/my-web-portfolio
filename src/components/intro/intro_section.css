@@ -60,15 +60,9 @@
 }
 
 /* Bio Text Styling */
-.bio-text h2 {
+.bio h2 {
     margin: 0;
     font-size: 2rem;
-}
-
-.bio-text p {
-    font-size: 1rem;
-    margin-top: 10px;
-    line-height: 1.5;
 }
 
 /* Headshot Styling */
@@ -186,6 +180,12 @@
         transform: translateY(-1px) rotate(-1deg);
     }
 }
+/* Keep each word together, but allow breaks between words */
+.word {
+    display: inline-flex;  /* Keeps letters together, but allows wrapping */
+    flex-wrap: wrap; 
+}
+
 /* Bio text hover animation */
 .hover-text-bio {
     display: inline-block;
