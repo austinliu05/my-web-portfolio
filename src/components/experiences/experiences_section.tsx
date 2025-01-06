@@ -38,7 +38,7 @@ const experienceItems = [
   // },
   {
     title: "MyDataProduct",
-    role: "Data Product Engineering Intern",
+    role: "Software Engineering Intern",
     date: "Feb. 2024 - May 2024",
     description: "Participated in daily stand-ups to support agile software development. Enhanced  devlopment by conducting SPIKEs on industry-standard APIs, and designing config YAML files with consideration for downstream impact. Automated development operations, including scripting GCP SSL certificate renewal and conducted Quality Assurance (QA) reviews on merge requests.",
     imageURL: "experiences/mdp-logo.png",
