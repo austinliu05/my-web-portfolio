@@ -6,7 +6,7 @@ const projectItems = [
     title: "Beya",
     role: "Founding Software Engineer",
     date: "Nov. 2024 - Current",
-    description: "Supporting small businesses with inventory management, event and locales proximity-based features, minimum-fee transactions, and analytics. Startup with my Brown friends",
+    description: "Supporting small businesses with inventory management, event and locales proximity-based features, minimum-fee transactions, and analytics. Startup @ Brown.",
     imageURL: "projects/beya-logo.png",
     websiteURL: "https://usebeya.com/",
     videoURL: "",
@@ -35,8 +35,8 @@ const projectItems = [
     websiteURL: "https://wordhunt-online.vercel.app/",
     videoURL: "https://youtu.be/tA-Wi34ySys?si=MSUBMFWukCMteQja",
     githubURL: "https://github.com/austinliu05/wordhunt-online",
-    skills: ["React", "Bootstrap", "Firebase", "NodeJS"],
-    techStack: ["web_development/react.png", "web_development/bootstrap.svg", "web_development/firebase.png", "web_development/nodejs.jpg", ]
+    skills: ["React", "Bootstrap", "Firebase", "NodeJS", "Socket.IO"],
+    techStack: ["web_development/react.png", "web_development/bootstrap.svg", "web_development/firebase.png", "web_development/nodejs.jpg", "web_development/socketio.png", ]
   },
   {
     title: "Find My Food",
