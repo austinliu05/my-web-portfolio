@@ -25,7 +25,7 @@ body {
 }
 
 section {
-  padding: 20px;
+  padding: 1vh;
   flex: 1;
 }
 
@@ -75,12 +75,7 @@ section {
 
 @media (max-width: 1100px) {
   section {
-    padding: 20px;
     box-sizing: border-box;
-  }
-
-  .section-skills {
-    display: none;
   }
 
   .container h1 {
