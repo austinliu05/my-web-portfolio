@@ -1,3 +1,46 @@
+.tech-stack-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.tech-icon-container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tech-icon:hover {
+    transform: scale(1.1);
+}
+
+/* Tooltip */
+.tech-icon-container::before {
+    content: attr(data-tooltip);
+    visibility: hidden;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    position: absolute;
+    bottom: 125%;  /* Show tooltip above */
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tech-icon-container:hover::before {
+    visibility: visible;
+    opacity: 1;
+}
+
+
 .slideshow-wrapper {
     display: flex;
     flex-direction: column;
@@ -48,6 +91,29 @@
     max-width: 400px;
 }
 
+/* Tech Stack Row */
+.tech-stack-row {
+    margin: 15px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.carousel .slide .tech-icon {
+    width: 3vh;
+    height: 3vh;
+    object-fit: contain;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.tech-stack-row p {
+    margin: 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Slide Buttons */
 .slide-buttons {
     margin-top: 20px;
 }
@@ -113,6 +179,7 @@
 .carousel .dot.selected {
     background-color: #ac171c !important;
 }
+
 /* Responsive Adjustments */
 @media (max-width: 1000px) {
     .slide-content {
@@ -120,23 +187,29 @@
         margin: 0 auto;
     }
 }
+
 /* Responsive Layout for Tablets */
 @media (max-width: 1000px) and (min-width: 641px) {
     .slide-content {
         flex-direction: column;
         align-items: center;
         text-align: center;
-        max-width: 600px;  /* Adjust width for tablet screens */
+        max-width: 600px;
     }
     .slide-content img {
-        width: 70%;  /* Slightly larger for better visibility */
+        width: 70%;
         margin-bottom: 20px;
     }
     .slide-metadata {
         margin-left: 0;
         max-width: 500px;
     }
+    .tech-stack-row {
+        gap: 15px;
+    }
 }
+
+/* Responsive Layout for Mobile Screens */
 @media (max-width: 640px) {
     .slide-content {
         max-width: 300px;
@@ -151,6 +224,9 @@
     .slide-metadata {
         margin-left: 0;
         max-width: 400px;
+    }
+    .tech-stack-row {
+        gap: 10px;
     }
 }
 
@@ -170,6 +246,7 @@
         display: flex !important;
     }
 }
+
 /* Custom Arrows (Default for Small Screens) */
 .custom-arrow {
     position: absolute;
@@ -179,9 +256,9 @@
     background: rgb(133, 133, 133);
     color: white;
     border: none;
-    padding: 8px;  /* Smaller padding for mobile */
+    padding: 8px;
     border-radius: 50%;
-    font-size: 1.2rem;  /* Smaller arrow icon size */
+    font-size: 1.2rem;
     cursor: pointer;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s ease;
@@ -207,15 +284,15 @@
 /* Hide arrows on large screens */
 @media (min-width: 1000px) {
     .custom-arrow {
-        display: none;  /* Hide arrows on large screens */
+        display: none;
     }
 }
 
 /* Smaller Arrows for Mobile Screens */
 @media (max-width: 768px) {
     .custom-arrow {
-        font-size: 1rem;  /* Smaller icons */
-        padding: 5px;  /* Smaller padding */
+        font-size: 1rem;
+        padding: 5px;
     }
 
     .custom-arrow-left {

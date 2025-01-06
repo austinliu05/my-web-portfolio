@@ -3,7 +3,7 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import "./slideshow.css";
-import { ASSETS_BASE_PATH } from "../constants";
+import { ASSETS_BASE_PATH, ASSETS_SKILLS_BASE_PATH } from "../constants";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -15,6 +15,8 @@ interface Slide {
     imageURL: string;
     websiteURL?: string;
     githubURL?: string;
+    skills?: string[];  // Array for tech stack icons
+    techStack?: string[];  // Array for tech stack icons
 }
 
 interface SlideshowProps {
@@ -61,17 +63,38 @@ const Slideshow: React.FC<SlideshowProps> = ({ items }) => {
                 {items.map((item, index) => (
                     <div key={index} className="carousel-slide">
                         <div className="slide-content">
-                            <img
-                                src={`${ASSETS_BASE_PATH}${item.imageURL}`}
-                                alt={item.title}
-                            />
+                            <div className="slide-images">
+                                <img
+                                    src={`${ASSETS_BASE_PATH}${item.imageURL}`}
+                                    alt={item.title}
+                                />
+                                {/* Tech Stack Section */}
+                                {item.techStack && item.techStack.length > 0 && (
+                                    <div className="tech-stack-row">
+                                        <p>Tech Stack: </p>
+                                        {item.techStack.map((tech, i) => (
+                                            <div
+                                                key={i}
+                                                className="tech-icon-container"
+                                                data-tooltip={item.skills ? item.skills[i] : ""}
+                                            >
+                                                <img
+                                                    src={`${ASSETS_SKILLS_BASE_PATH}/${tech}`}
+                                                    alt={tech}
+                                                    className="tech-icon"
+                                                />
+                                            </div>
+                                        ))}
+                                    </div>
+                                )}
+
+                            </div>
                             <div className="slide-metadata">
                                 <h2>{item.title}</h2>
                                 {item.role && item.date && (
                                     <p>{item.role} • {item.date}</p>
                                 )}
                                 <p>{item.description}</p>
-
                                 <div className="slide-buttons">
                                     {item.websiteURL && (
                                         <a

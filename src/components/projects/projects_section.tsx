@@ -10,7 +10,9 @@ const projectItems = [
     imageURL: "projects/beya-logo.png",
     websiteURL: "https://usebeya.com/",
     videoURL: "",
-    githubURL: ""
+    githubURL: "",
+    skills: ["React Expo", "Tailwind CSS", "Firebase", "AWS", "Stripe"],
+    techStack: ["web_development/react-expo.png", "web_development/tailwindcss.png","web_development/firebase.png", "web_development/aws.jpg", "web_development/stripe.jpg", ]
   },
   {
     title: "Guitar Tab Transformer",
@@ -20,7 +22,9 @@ const projectItems = [
     imageURL: "projects/guitar-tab-transformer.jpeg",
     websiteURL: "https://guitar-tab-transformer.vercel.app/",
     videoURL: "",
-    githubURL: "https://github.com/austinliu05/guitar-tab-transformer"
+    githubURL: "https://github.com/austinliu05/guitar-tab-transformer",
+    skills: ["React", "Django", "OpenCV"],
+    techStack: ["web_development/react.png", "web_development/django.png", "ML_libs/opencv.png"]
   },
   {
     title: "WordHunt Online",
@@ -30,7 +34,9 @@ const projectItems = [
     imageURL: "projects/wordhunt-online.png",
     websiteURL: "https://wordhunt-online.vercel.app/",
     videoURL: "https://youtu.be/tA-Wi34ySys?si=MSUBMFWukCMteQja",
-    githubURL: "https://github.com/austinliu05/wordhunt-online"
+    githubURL: "https://github.com/austinliu05/wordhunt-online",
+    skills: ["React", "Bootstrap", "Firebase", "NodeJS"],
+    techStack: ["web_development/react.png", "web_development/bootstrap.svg", "web_development/firebase.png", "web_development/nodejs.jpg", ]
   },
   {
     title: "Find My Food",
@@ -40,7 +46,9 @@ const projectItems = [
     imageURL: "projects/findmyfood-architecture.png",
     websiteURL: "https://brownfood.netlify.app/",
     videoURL: "https://www.youtube.com/watch?v=th3U7XPuVUM",
-    githubURL: "https://github.com/austinliu05/Brown-Dining"
+    githubURL: "https://github.com/austinliu05/Brown-Dining",
+    skills: ["React", "AWS", "Flask"],
+    techStack: ["web_development/react.png", "web_development/aws.jpg", "web_development/flask.jpg", ]
   },
   {
     title: "Connect 4",
@@ -50,7 +58,9 @@ const projectItems = [
     imageURL: "projects/connect4-minimax.webp",
     websiteURL: "https://austin-connect4.netlify.app/",
     videoURL: "",
-    githubURL: "https://github.com/austinliu05/Connect4-Source-Code"
+    githubURL: "https://github.com/austinliu05/Connect4-Source-Code",
+    skills: ["React", "Firebase", "Flask"],
+    techStack: ["web_development/react.png", "web_development/firebase.png", "web_development/flask.jpg", ]
   },
   {
     title: "Phantom Traffic Jam Preventation",

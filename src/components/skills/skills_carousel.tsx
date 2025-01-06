@@ -14,10 +14,10 @@ const skills = [
     { name: 'NodeJS', imageUrl: 'web_development/nodejs.png' },
     { name: 'Bootstrap', imageUrl: 'web_development/bootstrap.svg' },
     { name: 'Tailwind CSS', imageUrl: 'web_development/tailwindcss.png' },
-    { name: 'Firebase', imageUrl: 'tools/firebase.png' },
-    { name: 'AWS', imageUrl: 'tools/aws.webp' },
-    { name: 'GCP', imageUrl: 'tools/gcp.png' },
-    { name: 'GitHub', imageUrl: 'tools/github.png' },
+    { name: 'Firebase', imageUrl: 'web_development/firebase.png' },
+    { name: 'AWS', imageUrl: 'web_development/aws.webp' },
+    { name: 'GCP', imageUrl: 'web_development/gcp.png' },
+    { name: 'GitHub', imageUrl: 'web_development/github.png' },
 ];
 
 const SkillsCarousel: React.FC = () => {
