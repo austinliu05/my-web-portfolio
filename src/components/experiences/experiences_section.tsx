@@ -10,7 +10,9 @@ const experienceItems = [
     imageURL: "experiences/sai-logo.png",
     websiteURL: "https://sai.com.ai/",
     videoURL: "",
-    githubURL: ""
+    githubURL: "",
+    skills: ["React", "Next JS", "Mongo DB", "Firebase", "ChatGPT", "Stripe"],
+    techStack: ["web_development/react.png", "web_development/nextjs.png", "web_development/mongodb.svg","web_development/firebase.png", "web_development/chatgpt.jpg",  "web_development/stripe.jpg",]
   },
   {
     title: "Stealth Startup",
@@ -20,18 +22,20 @@ const experienceItems = [
     imageURL: "experiences/bonsai-architecture.png",
     websiteURL: "",
     videoURL: "https://www.youtube.com/watch?v=rdxR_WoPFOo",
-    githubURL: ""
+    githubURL: "",
+    skills: ["React Expo", "NodeJS", "Firebase", "ChatGPT", "Edamam"],
+    techStack: ["web_development/react-expo.png", "web_development/nodejs.jpg","web_development/firebase.png", "web_development/chatgpt.jpg",  "web_development/edamam.png",]
   },
-  {
-    title: "Kognitiv Edge",
-    role: "Back End Intern",
-    date: "March  2024 - May 2024",
-    description: "Developed CI/CD pipelines to ensure smooth deployments from development to production environments. Worked with various services including Azure, Terraform, and GitHub Actions.",
-    imageURL: "experiences/kogedge-homepage.png",
-    websiteURL: "https://www.kognitivedge.com/",
-    videoURL: "",
-    githubURL: ""
-  },
+  // {
+  //   title: "Kognitiv Edge",
+  //   role: "Back End Intern",
+  //   date: "March  2024 - May 2024",
+  //   description: "Developed CI/CD pipelines to ensure smooth deployments from development to production environments. Worked with various services including Azure, Terraform, and GitHub Actions.",
+  //   imageURL: "experiences/kogedge-homepage.png",
+  //   websiteURL: "https://www.kognitivedge.com/",
+  //   videoURL: "",
+  //   githubURL: ""
+  // },
   {
     title: "MyDataProduct",
     role: "Data Product Engineering Intern",
@@ -40,7 +44,9 @@ const experienceItems = [
     imageURL: "experiences/mdp-logo.png",
     websiteURL: "https://www.linkedin.com/company/mydataproduct/",
     videoURL: "",
-    githubURL: ""
+    githubURL: "",
+    skills: ["React", "Flask", "GCP"],
+    techStack: ["web_development/react.png", "web_development/flask.jpg","web_development/gcp.png",]
   },
   {
     title: "Brown Technology and Consulting Group",
@@ -50,7 +56,9 @@ const experienceItems = [
     imageURL: "experiences/btcg-homepage.png",
     websiteURL: "https://browntechnologyconsultinggroup.com/",
     videoURL: "",
-    githubURL: ""
+    githubURL: "",
+    skills: ["React", "Flask", "GCP"],
+    techStack: ["web_development/react.png"]
   },
 ];
 const ExperiencesSection: React.FC = () => {
