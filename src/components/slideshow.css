@@ -190,6 +190,9 @@
 
 /* Responsive Layout for Tablets */
 @media (max-width: 1000px) and (min-width: 641px) {
+    .tech-stack-row{
+        display: none;
+    }
     .slide-content {
         flex-direction: column;
         align-items: center;
