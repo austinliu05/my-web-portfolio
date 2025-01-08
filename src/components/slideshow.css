@@ -195,6 +195,9 @@
         justify-content: center;
         padding-left: 10%;
     }
+    .slideshow-button {
+        font-size: 9px;
+    }
 }
 
 /* Responsive Layout for Tablets */
