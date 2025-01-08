@@ -14,6 +14,7 @@ interface Slide {
     date?: string;
     imageURL: string;
     websiteURL?: string;
+    videoURL?: string;
     githubURL?: string;
     skills?: string[];  // Array for tech stack icons
     techStack?: string[];  // Array for tech stack icons
@@ -104,6 +105,17 @@ const Slideshow: React.FC<SlideshowProps> = ({ items }) => {
                                         >
                                             <button className="slideshow-button">
                                                 Visit Website
+                                            </button>
+                                        </a>
+                                    )}
+                                    {item.videoURL && (
+                                        <a
+                                            href={item.videoURL}
+                                            target="_blank"
+                                            rel="noreferrer"
+                                        >
+                                            <button className="slideshow-button">
+                                                Watch Demo
                                             </button>
                                         </a>
                                     )}
