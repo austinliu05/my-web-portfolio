@@ -96,14 +96,14 @@ const Slideshow: React.FC<SlideshowProps> = ({ items }) => {
                                     <p>{item.role} • {item.date}</p>
                                 )}
                                 <p>{item.description}</p>
-                                <div className="slide-buttons">
+                                <div className={`slide-buttons ${item.githubURL ? 'github-exists' : ''}`}>
                                     {item.websiteURL && (
                                         <a
                                             href={item.websiteURL}
                                             target="_blank"
                                             rel="noreferrer"
                                         >
-                                            <button className="slideshow-button">
+                                            <button className={`slideshow-button ${item.githubURL ? 'github-exists' : ''}`}>
                                                 Visit Website
                                             </button>
                                         </a>
@@ -114,8 +114,7 @@ const Slideshow: React.FC<SlideshowProps> = ({ items }) => {
                                             target="_blank"
                                             rel="noreferrer"
                                         >
-                                            <button className="slideshow-button">
-                                                Watch Demo
+                                            <button className={`slideshow-button ${item.githubURL ? 'github-exists' : ''}`}> Watch Demo
                                             </button>
                                         </a>
                                     )}

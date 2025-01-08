@@ -127,7 +127,6 @@
     color: white;
     border: none;
     padding: 10px 20px;
-    margin-right: 10px;
     cursor: pointer;
     text-transform: uppercase;
     font-size: 11px;
@@ -135,7 +134,9 @@
     transition: background-color 0.3s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
+.slideshow-button.github-exists{
+    margin-right: 10px;
+}
 .slideshow-button:hover {
     background-color: #c51b21;
 }
@@ -193,7 +194,9 @@
     }
     .slide-buttons {
         justify-content: center;
-        padding-left: 10%;
+    }
+    .slide-buttons.github-exists {
+        padding-left: 5%;
     }
     .slideshow-button {
         font-size: 9px;
