@@ -200,7 +200,9 @@
         text-align: center;
         max-width: 600px;
     }
-
+    .carousel .control-dots {
+        display: none;
+    }
     .slide-content img {
         width: 70%;
         margin-bottom: 20px;
@@ -225,7 +227,9 @@
         text-align: center;
         margin: 0 auto;
     }
-
+    .carousel .control-dots {
+        display: none;
+    }
     .slide-content img {
         margin-bottom: 20px;
     }

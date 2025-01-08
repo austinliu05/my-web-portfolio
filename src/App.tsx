@@ -16,8 +16,6 @@ function App() {
         <IntroSection />
         <hr className="separator" />
         <SkillsCarousel/>
-        {/* <hr className="separator" />
-        <Skills /> */}
         <hr className="separator" />
         <ProjectsSections />
         <hr className="separator" />
