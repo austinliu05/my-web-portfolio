@@ -14,7 +14,7 @@ const IntroSection: React.FC = () => {
 
   useEffect(() => {
     const bio =
-      "Hi! I'm Austin Liu, currently pursuing a dual degree in Computer Science and Economics at Brown University, with an additional focus on earning an Entrepreneurship Certificate";
+      "Hi! I'm Austin Liu, currently pursuing a dual degree in Computer Science and Economics at Brown University, with an additional focus in Entrepreneurship.";
 
     // BIO: Split into words, then each word into letters, so line breaks only occur between words
     const bioWords = bio.split(" ").map((word, i) => (

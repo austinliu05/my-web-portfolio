@@ -33,7 +33,7 @@ const projectItems = [
     description: "Inspired by the WordHunt game on GamePigeon, I developed a lightweight web version using React, Node.js, and Firebase. The application includes core gameplay mechanics, and I’m currently working on adding AI-driven bot difficulty levels and a real-time multiplayer system.",
     imageURL: "projects/wordhunt-online.png",
     websiteURL: "https://wordhunt-online.vercel.app/",
-    videoURL: "https://youtu.be/tA-Wi34ySys?si=MSUBMFWukCMteQja",
+    videoURL: "https://youtu.be/TtuDezyLU9g",
     githubURL: "https://github.com/austinliu05/wordhunt-online",
     skills: ["React", "Bootstrap", "Firebase", "NodeJS", "Socket.IO"],
     techStack: ["web_development/react.png", "web_development/bootstrap.svg", "web_development/firebase.png", "web_development/nodejs.jpg", "web_development/socketio.png", ]
