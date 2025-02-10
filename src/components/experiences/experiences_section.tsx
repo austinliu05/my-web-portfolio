@@ -3,6 +3,30 @@ import Slideshow from '../slideshow'
 
 const experienceItems = [
   {
+    title: "Symbotic",
+    role: "Software Engineer Intern",
+    date: "Incoming Summer 2025",
+    description: "Data Services.",
+    imageURL: "experiences/symbotic-logo.jpg",
+    websiteURL: "https://www.symbotic.com/",
+    videoURL: "",
+    githubURL: "",
+    skills: ["C#", "SQL"],
+    techStack: ["languages/c-sharp.png", "languages/sql.png"]
+  },
+  {
+    title: "Helios Technologies",
+    role: "Software Engineer Intern",
+    date: "Feb.  2025 - Current",
+    description: "AI chatbots and more.",
+    imageURL: "experiences/helios-logo.png",
+    websiteURL: "https://www.linkedin.com/company/helios-tech-ai/posts/?feedView=all",
+    videoURL: "",
+    githubURL: "",
+    skills: ["React", "Python"],
+    techStack: ["web_development/react.png", "languages/python.png"]
+  },
+  {
     title: "sai (Student AI)",
     role: "Software Engineer Intern",
     date: "Nov.  2024 - Current",
@@ -26,16 +50,6 @@ const experienceItems = [
     skills: ["React Expo", "NodeJS", "Firebase", "ChatGPT", "Edamam"],
     techStack: ["web_development/react-expo.png", "web_development/nodejs.jpg","web_development/firebase.png", "web_development/chatgpt.jpg",  "web_development/edamam.png",]
   },
-  // {
-  //   title: "Kognitiv Edge",
-  //   role: "Back End Intern",
-  //   date: "March  2024 - May 2024",
-  //   description: "Developed CI/CD pipelines to ensure smooth deployments from development to production environments. Worked with various services including Azure, Terraform, and GitHub Actions.",
-  //   imageURL: "experiences/kogedge-homepage.png",
-  //   websiteURL: "https://www.kognitivedge.com/",
-  //   videoURL: "",
-  //   githubURL: ""
-  // },
   {
     title: "MyDataProduct",
     role: "Software Engineering Intern",
