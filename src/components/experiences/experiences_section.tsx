@@ -20,7 +20,7 @@ const experienceItems = [
     date: "Feb.  2025 - Current",
     description: "AI chatbots and more.",
     imageURL: "experiences/helios-logo.png",
-    websiteURL: "https://www.linkedin.com/company/helios-tech-ai/posts/?feedView=all",
+    websiteURL: "https://www.heliostechnologies.ai/",
     videoURL: "",
     githubURL: "",
     skills: ["React", "Python"],
