@@ -1,5 +1,6 @@
-import React from 'react';
-import Slideshow from '../slideshow'
+import React, { useState } from 'react';
+import Slideshow from '../slideshow'; // Make sure your Slideshow component has proper types
+import Grid from '../Grid';
 
 const projectItems = [
   {
@@ -12,7 +13,7 @@ const projectItems = [
     videoURL: "",
     githubURL: "",
     skills: ["React Expo", "Tailwind CSS", "Firebase", "AWS", "Stripe"],
-    techStack: ["web_development/react-expo.png", "web_development/tailwindcss.png","web_development/firebase.png", "web_development/aws.jpg", "web_development/stripe.jpg", ]
+    techStack: ["web_development/react-expo.png", "web_development/tailwindcss.png", "web_development/firebase.png", "web_development/aws.jpg", "web_development/stripe.jpg",]
   },
   {
     title: "Guitar Tab Transformer",
@@ -27,6 +28,18 @@ const projectItems = [
     techStack: ["web_development/react.png", "web_development/django.png", "ML_libs/opencv.png"]
   },
   {
+    title: "Brown Formula Racing Team",
+    role: "Lead Backend Engineer",
+    date: "Oct. 2024 - Current",
+    description: "Developing a robust driving data application designed to optimize driver performance and testing procedures.",
+    imageURL: "projects/brown-fsae.png",
+    websiteURL: "https://sites.google.com/brown.edu/fsae/home",
+    videoURL: "https://brown-fsae.vercel.app",
+    githubURL: "https://github.com/ethany202/Brown-FSAE-Driving-Day-App",
+    skills: ["React", "Tailwind CSS", "Firebase", "AWS"],
+    techStack: ["web_development/react.png", "web_development/tailwindcss.png", "web_development/firebase.png", "web_development/aws.jpg"]
+  },
+  {
     title: "WordHunt Online",
     role: "Individual Contributor",
     date: "Oct. 2024 - Nov. 2024",
@@ -36,7 +49,7 @@ const projectItems = [
     videoURL: "https://youtu.be/TtuDezyLU9g",
     githubURL: "https://github.com/austinliu05/wordhunt-online",
     skills: ["React", "Bootstrap", "Firebase", "NodeJS", "Socket.IO"],
-    techStack: ["web_development/react.png", "web_development/bootstrap.svg", "web_development/firebase.png", "web_development/nodejs.jpg", "web_development/socketio.png", ]
+    techStack: ["web_development/react.png", "web_development/bootstrap.svg", "web_development/firebase.png", "web_development/nodejs.jpg", "web_development/socketio.png",]
   },
   {
     title: "Find My Food",
@@ -49,7 +62,7 @@ const projectItems = [
     videoURL: "https://www.youtube.com/watch?v=th3U7XPuVUM",
     githubURL: "https://github.com/austinliu05/Brown-Dining",
     skills: ["React", "AWS", "Flask"],
-    techStack: ["web_development/react.png", "web_development/aws.jpg", "web_development/flask.jpg", ]
+    techStack: ["web_development/react.png", "web_development/aws.jpg", "web_development/flask.jpg",]
   },
   {
     title: "Connect 4",
@@ -61,7 +74,7 @@ const projectItems = [
     videoURL: "",
     githubURL: "https://github.com/austinliu05/Connect4-Source-Code",
     skills: ["React", "Firebase", "Flask"],
-    techStack: ["web_development/react.png", "web_development/firebase.png", "web_development/flask.jpg", ]
+    techStack: ["web_development/react.png", "web_development/firebase.png", "web_development/flask.jpg",]
   },
   {
     title: "Phantom Traffic Jam Preventation",
@@ -75,13 +88,37 @@ const projectItems = [
   },
 ];
 
+type ViewMode = "slideshow" | "grid";
+
 const ProjectsSection: React.FC = () => {
+  const [viewMode, setViewMode] = useState<ViewMode>("grid");
+
   return (
     <section id="projects" className="section-projects">
-      <div className='container'>
-        <h1>Projects</h1>
+      <div className="container">
+        <div className='title-container'>
+          <h1>Projects</h1>
+          <div className="view-toggle-projects">
+            <button
+              onClick={() => setViewMode("slideshow")}
+              className={viewMode === "slideshow" ? "active" : ""}
+            >
+              Slideshow
+            </button>
+            <button
+              onClick={() => setViewMode("grid")}
+              className={viewMode === "grid" ? "active" : ""}
+            >
+              Grid
+            </button>
+          </div>
+        </div>
       </div>
-      <Slideshow items={projectItems} />
+      {viewMode === "slideshow" ? (
+        <Slideshow items={projectItems} />
+      ) : (
+        <Grid items={projectItems} />
+      )}
     </section>
   );
 };
