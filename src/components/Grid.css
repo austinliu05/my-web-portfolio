@@ -8,17 +8,18 @@
 }
 
 .project-card {
-    background-color: #1c1c1c;
-    /* Dark background */
+    background-color: #1c1c1c; /* Dark background */
     border-radius: 12px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.3); /* White border with slight transparency */
 }
 
 .project-card:hover {
     transform: translateY(-5px);
+    border-color: rgba(255, 255, 255, 0.6); /* Make the border more visible on hover */
 }
 
 .project-image {
