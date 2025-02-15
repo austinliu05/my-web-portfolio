@@ -44,7 +44,7 @@ const IntroSection: React.FC = () => {
           <div className="flip-card-front">
             <img
               className="headshot"
-              src={`${process.env.PUBLIC_URL}/assets/headshot.jpg`}
+              src={`${process.env.PUBLIC_URL}/assets/headshot.png`}
               alt="Austin Liu"
             />
             <div className="click-me-text">About Me</div>

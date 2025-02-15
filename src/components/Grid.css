@@ -4,7 +4,6 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     /* Responsive grid */
     gap: 1.5rem;
-    padding: 2rem;
 }
 
 .project-card {

@@ -66,9 +66,8 @@
 /* Click Me Text */
 .click-me-text {
     position: absolute;
-    bottom: 15px;
+    bottom: 5px;
     left: 25%;
-    transform: translateX(-50%);
     width: 40%;
     text-align: center;
     color: white;
@@ -77,8 +76,7 @@
     text-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
     background: rgba(0, 0, 0, 0.4);
     padding: 8px 0;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-radius: 15px;
     cursor: pointer;
     animation: fadeIn 0.6s ease forwards;
 }
