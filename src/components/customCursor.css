@@ -1,0 +1,28 @@
+* {
+    cursor: none;
+}
+
+.custom-cursor {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    background: url('/public/assets/cursor.png') no-repeat center center;
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: background-color 0.2s ease;
+    z-index: 9999;
+}
+
+.custom-cursor-border {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: 3px solid #fff;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: all 0.2s ease-out;
+    z-index: 9998;
+}
