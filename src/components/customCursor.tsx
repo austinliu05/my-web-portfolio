@@ -41,13 +41,6 @@ const CustomCursor = () => {
                     top: `${cursorY}px`,
                 }}
             />
-            {/* <div
-                className="custom-cursor-border"
-                style={{
-                    left: `${cursorX}px`,
-                    top: `${cursorY}px`,
-                }}
-            /> */}
         </>
     );
 };

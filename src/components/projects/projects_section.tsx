@@ -76,16 +76,6 @@ const projectItems = [
     skills: ["React", "Firebase", "Flask"],
     techStack: ["web_development/react.png", "web_development/firebase.png", "web_development/flask.jpg",]
   },
-  {
-    title: "Phantom Traffic Jam Preventation",
-    role: "Researcher",
-    date: "Aug. 2021 - May 2023",
-    description: "Using UPenn's F1tenth Course, mastered Reactive Methods like Wall Following, Follow the Gap, and PID Controller. Implemented these techniques in a simulator, then progressed to real F1tenth vehicles. Subsequently developed the 'Phantom Traffic Jam Prevention Project' for an undergraduate research competition.",
-    imageURL: "projects/unt-poster.png",
-    websiteURL: "",
-    videoURL: "",
-    githubURL: ""
-  },
 ];
 
 type ViewMode = "slideshow" | "grid";
