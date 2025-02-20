@@ -4,6 +4,18 @@ import Grid from '../Grid';
 
 const projectItems = [
   {
+    title: "Pay Your Friend",
+    role: "Individual Contributor",
+    date: "Feb. 2025 - Current",
+    description: "This internal tool was born out of the simple need to avoid the awkward moments of chasing my friends down for money after fronting expenses. Designed exclusively for my 12 friendsa and I, it streamlines the process of tracking who owes what, keeping our finances transparent and hassle-free.",
+    imageURL: "projects/pay-your-friend.png",
+    websiteURL: "",
+    videoURL: "https://youtu.be/xPVssnxfOVs",
+    githubURL: "https://github.com/austinliu05/pay-your-friends",
+    skills: ["React", "Bootstrap", "Firebase"],
+    techStack: ["web_development/react.png", "web_development/bootstrap.svg", "web_development/firebase.png"]
+  },
+  {
     title: "Beya",
     role: "Founding Software Engineer",
     date: "Nov. 2024 - Current",
