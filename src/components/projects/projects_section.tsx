@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Slideshow from '../slideshow'; // Make sure your Slideshow component has proper types
+import Slideshow from '../slideshow'; 
 import Grid from '../Grid';
 
 const projectItems = [
@@ -7,7 +7,7 @@ const projectItems = [
     title: "Pay Your Friend",
     role: "Individual Contributor",
     date: "Feb. 2025 - Current",
-    description: "This internal tool was born out of the simple need to avoid the awkward moments of chasing my friends down for money after fronting expenses. Designed exclusively for my 12 friends and me, it streamlines the process of tracking who owes what, keeping our finances transparent and hassle-free.",
+    description: "This internal tool was born out of the simple need to avoid the awkward moments of chasing my friends down for money after fronting expenses. Designed exclusively for my 12 friends and me, it streamlines the process of tracking who owes what, keeping our finances transparent and hassle-free. Building out email reminders for unpaid payments.",
     imageURL: "projects/pay-your-friend.png",
     websiteURL: "",
     videoURL: "https://youtu.be/xPVssnxfOVs",
@@ -26,18 +26,6 @@ const projectItems = [
     githubURL: "",
     skills: ["React Expo", "Tailwind CSS", "Firebase", "AWS", "Stripe"],
     techStack: ["web_development/react-expo.png", "web_development/tailwindcss.png", "web_development/firebase.png", "web_development/aws.jpg", "web_development/stripe.jpg",]
-  },
-  {
-    title: "Guitar Tab Transformer",
-    role: "Researcher",
-    date: "June 2024 - Current",
-    description: "As an avid guitarist, I've decided to take on the challenge of designing a custom neural network to automatically transpose any song into guitar tabs from the audio file. I am currently collaborating with Claude Hu, a machine learning researcher at University of Virginia.",
-    imageURL: "projects/guitar-tab-transformer.jpeg",
-    websiteURL: "https://guitar-tab-transformer.vercel.app/",
-    videoURL: "",
-    githubURL: "https://github.com/austinliu05/guitar-tab-transformer",
-    skills: ["React", "Django", "OpenCV"],
-    techStack: ["web_development/react.png", "web_development/django.png", "ML_libs/opencv.png"]
   },
   {
     title: "Brown Formula Racing Team",
@@ -62,6 +50,18 @@ const projectItems = [
     githubURL: "https://github.com/austinliu05/wordhunt-online",
     skills: ["React", "Bootstrap", "Firebase", "NodeJS", "Socket.IO"],
     techStack: ["web_development/react.png", "web_development/bootstrap.svg", "web_development/firebase.png", "web_development/nodejs.jpg", "web_development/socketio.png",]
+  },
+  {
+    title: "Guitar Tab Transformer",
+    role: "Researcher",
+    date: "June 2024 - Oct. 2024",
+    description: "As an avid guitarist, I've decided to take on the challenge of designing a custom neural network to automatically transpose any song into guitar tabs from the audio file. I am currently collaborating with Claude Hu, a machine learning researcher at University of Virginia.",
+    imageURL: "projects/guitar-tab-transformer.jpeg",
+    websiteURL: "https://guitar-tab-transformer.vercel.app/",
+    videoURL: "",
+    githubURL: "https://github.com/austinliu05/guitar-tab-transformer",
+    skills: ["React", "Django", "OpenCV"],
+    techStack: ["web_development/react.png", "web_development/django.png", "ML_libs/opencv.png"]
   },
   {
     title: "Find My Food",
