@@ -7,19 +7,19 @@ const projectItems = [
     title: "Pay Your Friend",
     role: "Individual Contributor",
     date: "Feb. 2025 - Current",
-    description: "This internal tool was born out of the simple need to avoid the awkward moments of chasing my friends down for money after fronting expenses. Designed exclusively for my 12 friends and me, it streamlines the process of tracking who owes what, keeping our finances transparent and hassle-free. Building out email reminders for unpaid payments.",
+    description: "This internal tool was designed exclusively for my 12 friends and me. It streamlines the process of tracking who owes what, keeping our finances transparent and hassle-free. I implemented a daily email reminder along with fun analytics to keep people accountable. Currently working on scaling the project.",
     imageURL: "projects/pay-your-friend.png",
     websiteURL: "",
     videoURL: "https://youtu.be/xPVssnxfOVs",
     githubURL: "https://github.com/austinliu05/pay-your-friends",
-    skills: ["React", "Bootstrap", "Firebase"],
-    techStack: ["web_development/react.png", "web_development/bootstrap.svg", "web_development/firebase.png"]
+    skills: ["React", "Bootstrap", "Firebase", "NodeJS"],
+    techStack: ["web_development/react.png", "web_development/bootstrap.svg", "web_development/firebase.png", "web_development/nodejs.jpg"]
   },
   {
     title: "Beya",
     role: "Founding Software Engineer",
     date: "Nov. 2024 - Current",
-    description: "Supporting small businesses with inventory management, event and locales proximity-based features, minimum-fee transactions, and analytics. Startup @ Brown.",
+    description: "Supporting small businesses with inventory management, event and locales proximity-based features, minimum-fee transactions, and analytics. Startup @ Brown. App store release soon!",
     imageURL: "projects/beya-logo.png",
     websiteURL: "https://usebeya.com/",
     videoURL: "",
