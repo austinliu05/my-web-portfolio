@@ -31,7 +31,7 @@ const experienceItems = [
   {
     title: "sai (Study AI)",
     role: "Software Engineer Intern",
-    date: "Nov.  2024 - Current",
+    date: "Nov.  2024 - Jan. 2025",
     description: "Designing AI-powered application to enhance learning management systems (e.g. Canvas, Blackboard). Spearheading integrations for campuses across the U.S., including Cornell, UPenn, NYU, and Dartmouth, to improve educational workflows. Using MERN framework to build scalable  solutions, ensuring seamless user experiences and efficient backend operations.",
     imageURL: "experiences/sai-logo.png",
     gridImageURL: "experiences/grid-sai-logo.png",
