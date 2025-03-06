@@ -1,16 +1,17 @@
 import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import "./intro_section.css";
 
 const IntroSection: React.FC = () => {
   const [showText, setShowText] = useState(false);
+  const [bioContent, setBioContent] = useState<JSX.Element[]>([]);
+  const [isFlipped, setIsFlipped] = useState(false);
 
   useEffect(() => {
     setTimeout(() => {
       setShowText(true);
-    }, 500);  // Small delay before typing starts
+    }, 500); // Small delay before typing starts
   }, []);
-  const [bioContent, setBioContent] = useState<JSX.Element[]>([]);
-  const [isFlipped, setIsFlipped] = useState(false);
 
   useEffect(() => {
     const bio =
@@ -36,37 +37,62 @@ const IntroSection: React.FC = () => {
 
   return (
     <section className="section-intro">
-      <div
-        className={`flip-card ${isFlipped ? 'flipped' : ''}`}
+      <motion.div
+        className={`flip-card ${isFlipped ? "flipped" : ""}`}
         onClick={handleCardClick}
+        whileHover={{ rotateY: 10 }}
+        transition={{ type: "spring", stiffness: 300 }}
       >
         <div className="flip-card-inner">
           <div className="flip-card-front">
-            <img
+            <motion.img
               className="headshot"
               src={`${process.env.PUBLIC_URL}/assets/headshot.JPG`}
               alt="Austin Liu"
+              initial={{ opacity: 0, scale: 0.8 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5 }}
             />
-            <div className="click-me-text">About Me</div>
+            <motion.div
+              className="click-me-text"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 0.5 }}
+            >
+              About Me
+            </motion.div>
           </div>
           <div className="flip-card-back">
             <div className="bio-text">
               <p>
-                When I'm not working, you'll probably find me playing volleyball with my friends, practicing fingerstyle guitar for fun, or hunting down new food places to try.
+                When I'm not working, you'll probably find me playing volleyball with my
+                friends, practicing fingerstyle guitar for fun, or hunting down new food places to try.
               </p>
             </div>
           </div>
         </div>
-      </div>
+      </motion.div>
 
-      <div className="bio-container">
+      <motion.div
+        className="bio-container"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1, duration: 0.8 }}
+      >
         {/* Title text with continuous animation */}
         <h1 className="hover-text">
-          {!showText &&
+          {!showText && (
             <span className="placeholder">austinliu.dev</span>
-            }
+          )}
           {showText && (
-            <span className="typewriter">austinliu.dev</span>
+            <motion.span
+              className="typewriter"
+              initial={{ scale: 0.8 }}
+              animate={{ scale: 1 }}
+              transition={{ type: "spring", stiffness: 200 }}
+            >
+              austinliu.dev
+            </motion.span>
           )}
         </h1>
 
@@ -81,10 +107,16 @@ const IntroSection: React.FC = () => {
             rel="noopener noreferrer"
             target="_blank"
           >
-            <button>RESUME</button>
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              transition={{ type: "spring", stiffness: 300 }}
+            >
+              RESUME
+            </motion.button>
           </a>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

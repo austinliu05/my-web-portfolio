@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 import { ProjectItem } from "./types";
 import { ASSETS_BASE_PATH } from "../constants";
 import "./Grid.css";
@@ -9,19 +10,46 @@ interface GridProps {
     items: ProjectItem[];
 }
 
+// Variants for the card animation
+const cardVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } }
+};
+
+// Variants for the container that staggers child animations
+const containerVariants = {
+    hidden: {},
+    visible: {
+        transition: {
+            staggerChildren: 0.2,
+        },
+    },
+};
+
 const Grid: React.FC<GridProps> = ({ items }) => {
     return (
-        <div className="project-grid">
+        <motion.div
+            className="project-grid"
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+        >
             {items.map((item) => (
-                <div key={item.title} className="project-card">
-                <img
-                    src={`${ASSETS_BASE_PATH}${item.gridImageURL ? item.gridImageURL : item.imageURL}`}
-                    alt={item.title}
-                    className="project-image"
-                />
+                <motion.div
+                    key={item.title}
+                    className="project-card"
+                    variants={cardVariants}
+                >
+                    <img
+                        src={`${ASSETS_BASE_PATH}${item.gridImageURL ? item.gridImageURL : item.imageURL}`}
+                        alt={item.title}
+                        className="project-image"
+                    />
                     <div className="project-details">
                         <h3 className="project-title">{item.title}</h3>
-                        <p className="project-role">{item.role} • {item.date}</p>
+                        <p className="project-role">
+                            {item.role} • {item.date}
+                        </p>
                         <p className="project-description">{item.description}</p>
 
                         <div className={`project-buttons ${item.githubURL ? 'github-exists' : ''}`}>
@@ -48,9 +76,9 @@ const Grid: React.FC<GridProps> = ({ items }) => {
                             )}
                         </div>
                     </div>
-                </div>
+                </motion.div>
             ))}
-        </div>
+        </motion.div>
     );
 };
 

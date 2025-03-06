@@ -22,7 +22,8 @@ const projectItems = [
     description: "Developing a robust driving data application designed to optimize driver performance and testing procedures.",
     imageURL: "projects/brown-fsae.png",
     websiteURL: "https://sites.google.com/brown.edu/fsae/home",
-    videoURL: "https://brown-fsae.vercel.app",
+    // videoURL: "https://brown-fsae.vercel.app",
+    videoURL: "",
     githubURL: "https://github.com/ethany202/Brown-FSAE-Driving-Day-App",
     skills: ["React", "Tailwind CSS", "Firebase", "AWS"],
     techStack: ["web_development/react.png", "web_development/tailwindcss.png", "web_development/firebase.png", "web_development/aws.jpg"]
