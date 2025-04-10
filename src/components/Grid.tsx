@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { ProjectItem } from "./types";
 import { ASSETS_BASE_PATH } from "../constants";
@@ -27,58 +27,87 @@ const containerVariants = {
 };
 
 const Grid: React.FC<GridProps> = ({ items }) => {
-    return (
-        <motion.div
-            className="project-grid"
-            variants={containerVariants}
-            initial="hidden"
-            animate="visible"
-        >
-            {items.map((item) => (
-                <motion.div
-                    key={item.title}
-                    className="project-card"
-                    variants={cardVariants}
-                >
-                    <img
-                        src={`${ASSETS_BASE_PATH}${item.gridImageURL ? item.gridImageURL : item.imageURL}`}
-                        alt={item.title}
-                        className="project-image"
-                    />
-                    <div className="project-details">
-                        <h3 className="project-title">{item.title}</h3>
-                        <p className="project-role">
-                            {item.role} • {item.date}
-                        </p>
-                        <p className="project-description">{item.description}</p>
+    // State to track the current modal image URL
+    const [modalImage, setModalImage] = useState<string>("");
+    const [showModal, setShowModal] = useState(false);
 
-                        <div className={`project-buttons ${item.githubURL ? 'github-exists' : ''}`}>
-                            {item.websiteURL && (
-                                <a href={item.websiteURL} target="_blank" rel="noreferrer">
-                                    <button className={`project-button ${item.githubURL ? 'github-exists' : ''}`}>
-                                        Visit Website
-                                    </button>
-                                </a>
-                            )}
-                            {item.videoURL && (
-                                <a href={item.videoURL} target="_blank" rel="noreferrer">
-                                    <button className={`project-button ${item.githubURL ? 'github-exists' : ''}`}>
-                                        Watch Demo
-                                    </button>
-                                </a>
-                            )}
-                            {item.githubURL && (
-                                <a href={item.githubURL} target="_blank" rel="noreferrer">
-                                    <button className="project-button github-button">
-                                        <FontAwesomeIcon icon={faGithub} size="lg" />
-                                    </button>
-                                </a>
+    // Handler to show the diagram image modal on click if diagramURL exists
+    const handleCardClick = (diagramURL?: string) => {
+        if (diagramURL) {
+            setModalImage(diagramURL);
+            setShowModal(true);
+        }
+    };
+
+    return (
+        <>
+            <motion.div
+                className="project-grid"
+                variants={containerVariants}
+                initial="hidden"
+                animate="visible"
+            >
+                {items.map((item) => (
+                    <motion.div
+                        key={item.title}
+                        className="project-card"
+                        variants={cardVariants}
+                        onClick={() => handleCardClick(item.diagramURL)}
+                    >
+                        <div className="image-container">
+                            <img
+                                src={`${ASSETS_BASE_PATH}${item.gridImageURL ? item.gridImageURL : item.imageURL}`}
+                                alt={item.title}
+                                className="project-image"
+                            />
+                            {item.diagramURL && (
+                                <div className="hover-overlay">
+                                    Click me
+                                </div>
                             )}
                         </div>
+                        <div className="project-details">
+                            <h3 className="project-title">{item.title}</h3>
+                            <p className="project-role">
+                                {item.role} • {item.date}
+                            </p>
+                            <p className="project-description">{item.description}</p>
+                            <div className={`project-buttons ${item.githubURL ? "github-exists" : ""}`}>
+                                {item.websiteURL && (
+                                    <a href={item.websiteURL} target="_blank" rel="noreferrer">
+                                        <button className={`project-button ${item.githubURL ? "github-exists" : ""}`}>
+                                            Visit Website
+                                        </button>
+                                    </a>
+                                )}
+                                {item.videoURL && (
+                                    <a href={item.videoURL} target="_blank" rel="noreferrer">
+                                        <button className={`project-button ${item.githubURL ? "github-exists" : ""}`}>
+                                            Watch Demo
+                                        </button>
+                                    </a>
+                                )}
+                                {item.githubURL && (
+                                    <a href={item.githubURL} target="_blank" rel="noreferrer">
+                                        <button className="project-button github-button">
+                                            <FontAwesomeIcon icon={faGithub} size="lg" />
+                                        </button>
+                                    </a>
+                                )}
+                            </div>
+                        </div>
+                    </motion.div>
+                ))}
+            </motion.div>
+
+            {showModal && modalImage && (
+                <div className="modal-overlay" onClick={() => setShowModal(false)}>
+                    <div className="modal-content">
+                        <img src={`${ASSETS_BASE_PATH}${modalImage}`} alt="Diagram" className="modal-image" />
                     </div>
-                </motion.div>
-            ))}
-        </motion.div>
+                </div>
+            )}
+        </>
     );
 };
 

@@ -19,14 +19,15 @@ const projectItems = [
     title: "Brown Formula Racing Team",
     role: "Lead Backend Engineer",
     date: "Oct. 2024 - Current",
-    description: "Developing a robust driving data application designed to optimize driver performance and testing procedures.",
+    description: "Building a driving data application to optimize driver performance and testing workflows. Managing cloud infrastructure, deploying services on AWS EC2 with load balancing for production-grade reliability. Utilizing S3 for storing car diagnostics, while leveraging Firebase Firestore to manage racing data, driver profiles, and issue logs.",
     imageURL: "projects/brown-fsae.png",
     websiteURL: "https://sites.google.com/brown.edu/fsae/home",
     // videoURL: "https://brown-fsae.vercel.app",
     videoURL: "",
     githubURL: "https://github.com/ethany202/Brown-FSAE-Driving-Day-App",
     skills: ["React", "Tailwind CSS", "Firebase", "AWS"],
-    techStack: ["web_development/react.png", "web_development/tailwindcss.png", "web_development/firebase.png", "web_development/aws.jpg"]
+    techStack: ["web_development/react.png", "web_development/tailwindcss.png", "web_development/firebase.png", "web_development/aws.jpg"],
+    diagramURL: "projects/brown-fsae-architecture.png"
   },
   {
     title: "Guitar Tab Transformer",
@@ -75,7 +76,8 @@ const projectItems = [
     videoURL: "https://www.youtube.com/watch?v=th3U7XPuVUM",
     githubURL: "https://github.com/austinliu05/Brown-Dining",
     skills: ["React", "AWS", "Flask"],
-    techStack: ["web_development/react.png", "web_development/aws.jpg", "web_development/flask.jpg",]
+    techStack: ["web_development/react.png", "web_development/aws.jpg", "web_development/flask.jpg",],
+    diagramURL: "projects/findmyfood-architecture.png"
   },
   {
     title: "Connect 4",

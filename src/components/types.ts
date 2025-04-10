@@ -10,5 +10,6 @@ export interface ProjectItem {
     githubURL: string;
     skills?: string[];
     techStack?: string[];
+    diagramURL?: string;
   }
   

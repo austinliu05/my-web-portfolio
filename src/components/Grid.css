@@ -23,7 +23,7 @@
 
 .project-image {
     width: 100%;
-    height: 200px;
+    height: 250px;
     object-fit: cover;
     background-color: #000;
 }
@@ -85,4 +85,30 @@
 
 .github-button:hover {
     background-color: #444;
+}
+.image-container {
+    position: relative;
+}
+
+/* The overlay that appears on hover */
+.hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+/* Show the overlay when hovering over the image container */
+.image-container:hover .hover-overlay {
+    opacity: 1;
 }
