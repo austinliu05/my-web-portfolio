@@ -1,7 +1,15 @@
-* {
-    cursor: none;
-}
+@media (hover: none) and (pointer: coarse) {
+    /* Reset the default cursor on all elements for mobile devices */
+    * {
+        cursor: auto !important;
+    }
 
+    /* Hide custom cursors on mobile */
+    .custom-cursor,
+    .custom-cursor-border {
+        display: none;
+    }
+}
 .custom-cursor {
     position: absolute;
     height: 100px;
