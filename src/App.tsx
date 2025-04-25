@@ -15,7 +15,7 @@ function App() {
 
     <div className="App">
       <ScrollProgressBar />
-      <CustomCursor />
+      {/* <CustomCursor /> */}
       <Navbar />
       <div>
         <IntroSection />
