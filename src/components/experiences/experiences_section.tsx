@@ -1,6 +1,7 @@
 import Slideshow from '../slideshow'
 import React, { useState } from 'react';
 import Grid from '../Grid';
+import ToggleSwitch from '../ToggleSwitch';
 
 const experienceItems = [
   {
@@ -92,20 +93,12 @@ const ExperiencesSection: React.FC = () => {
       <div className='container'>
       <div className='title-container'>
           <h1>Experiences</h1>
-          <div className="view-toggle-experiences">
-            <button
-              onClick={() => setViewMode("slideshow")}
-              className={viewMode === "slideshow" ? "active" : ""}
-            >
-              Slideshow
-            </button>
-            <button
-              onClick={() => setViewMode("grid")}
-              className={viewMode === "grid" ? "active" : ""}
-            >
-              Grid
-            </button>
-          </div>
+          <ToggleSwitch
+              isOn={viewMode === 'slideshow'}
+              onToggle={() =>
+                setViewMode(prev => (prev === 'slideshow' ? 'grid' : 'slideshow'))
+              }
+            />
         </div>
       </div>
       {viewMode === "slideshow" ? (

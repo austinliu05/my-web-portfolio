@@ -1,0 +1,23 @@
+.toggle-switch {
+    width: 56px;
+    height: 28px;
+    background-color: #000000;
+    border-radius: 9999px;
+    cursor: pointer;
+    padding: 0 4px;
+    margin-bottom: 5vh;
+    /* center the thumb vertically */
+    display: flex;
+    align-items: center;
+
+    /* make sure padding doesn’t grow the overall box */
+    box-sizing: border-box;
+}
+
+.toggle-switch__thumb {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}

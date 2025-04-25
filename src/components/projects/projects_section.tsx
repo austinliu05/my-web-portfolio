@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import Slideshow from '../slideshow'; 
+import Slideshow from '../slideshow';
 import Grid from '../Grid';
+import ToggleSwitch from '../ToggleSwitch';
 
 const projectItems = [
   {
@@ -103,20 +104,12 @@ const ProjectsSection: React.FC = () => {
       <div className="container">
         <div className='title-container'>
           <h1>Projects</h1>
-          <div className="view-toggle-projects">
-            <button
-              onClick={() => setViewMode("slideshow")}
-              className={viewMode === "slideshow" ? "active" : ""}
-            >
-              Slideshow
-            </button>
-            <button
-              onClick={() => setViewMode("grid")}
-              className={viewMode === "grid" ? "active" : ""}
-            >
-              Grid
-            </button>
-          </div>
+          <ToggleSwitch
+            isOn={viewMode === 'slideshow'}
+            onToggle={() =>
+              setViewMode(prev => (prev === 'slideshow' ? 'grid' : 'slideshow'))
+            }
+          />
         </div>
       </div>
       {viewMode === "slideshow" ? (
