@@ -8,10 +8,13 @@ import Footer from './components/footer/footer';
 import Navbar from './components/navbar/navbar';
 import SkillsCarousel from './components/skills/skills_carousel';
 import CustomCursor from './components/customCursor';
+import ScrollProgressBar from './components/ScrollProgressBar';
 
 function App() {
   return (
+
     <div className="App">
+      <ScrollProgressBar />
       <CustomCursor />
       <Navbar />
       <div>
