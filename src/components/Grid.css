@@ -67,6 +67,7 @@
     border-radius: 5px;
     transition: background-color 0.3s;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 1vw;
 }
 .project-button.github-exists{
     margin-right: 10px;
@@ -112,3 +113,4 @@
 .image-container:hover .hover-overlay {
     opacity: 1;
 }
+

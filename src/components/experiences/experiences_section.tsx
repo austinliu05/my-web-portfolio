@@ -26,7 +26,8 @@ const experienceItems = [
     videoURL: "",
     githubURL: "",
     skills: ["React", "Python"],
-    techStack: ["web_development/react.png", "languages/python.png"]
+    techStack: ["web_development/react.png", "languages/python.png"],
+    diagramURL: "experiences/helios-diagram.png"
   },
   {
     title: "sai (Study AI)",

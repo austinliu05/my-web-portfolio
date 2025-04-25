@@ -5,6 +5,7 @@ import { ASSETS_BASE_PATH } from "../constants";
 import "./Grid.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faDiagramProject } from "@fortawesome/free-solid-svg-icons";
 
 interface GridProps {
     items: ProjectItem[];
@@ -52,7 +53,6 @@ const Grid: React.FC<GridProps> = ({ items }) => {
                         key={item.title}
                         className="project-card"
                         variants={cardVariants}
-                        onClick={() => handleCardClick(item.diagramURL)}
                     >
                         <div className="image-container">
                             <img
@@ -60,11 +60,6 @@ const Grid: React.FC<GridProps> = ({ items }) => {
                                 alt={item.title}
                                 className="project-image"
                             />
-                            {item.diagramURL && (
-                                <div className="hover-overlay">
-                                    Click me
-                                </div>
-                            )}
                         </div>
                         <div className="project-details">
                             <h3 className="project-title">{item.title}</h3>
@@ -87,6 +82,14 @@ const Grid: React.FC<GridProps> = ({ items }) => {
                                         </button>
                                     </a>
                                 )}
+                                {item.diagramURL && (
+                                    <button
+                                        className={`project-button ${item.githubURL ? "github-exists" : ""}`}
+                                        onClick={() => handleCardClick(item.diagramURL)}
+                                    >
+                                        <FontAwesomeIcon icon={faDiagramProject} size="lg" />
+                                    </button>
+                                )}
                                 {item.githubURL && (
                                     <a href={item.githubURL} target="_blank" rel="noreferrer">
                                         <button className="project-button github-button">
@@ -98,15 +101,15 @@ const Grid: React.FC<GridProps> = ({ items }) => {
                         </div>
                     </motion.div>
                 ))}
-            </motion.div>
-
-            {showModal && modalImage && (
-                <div className="modal-overlay" onClick={() => setShowModal(false)}>
-                    <div className="modal-content">
-                        <img src={`${ASSETS_BASE_PATH}${modalImage}`} alt="Diagram" className="modal-image" />
+                {showModal && modalImage && (
+                    <div className="modal-overlay" onClick={() => setShowModal(false)}>
+                        <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+                            <button className="modal-close-button" onClick={() => setShowModal(false)}>×</button>
+                            <img src={`${ASSETS_BASE_PATH}${modalImage}`} alt="Diagram" className="modal-image" />
+                        </div>
                     </div>
-                </div>
-            )}
+                )}
+            </motion.div>
         </>
     );
 };

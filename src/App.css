@@ -237,19 +237,47 @@ section {
   z-index: 9999;
 }
 
-/* Modal content container */
-.modal-content {
-  background: #fff;
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 90%;
-  max-height: 90%;
-  overflow: auto;
+.modal-close-button {
+  position: absolute;
+  top: 12px;
+  right: 12px; /* much better for responsiveness */
+  font-size: 1.4rem;
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #000;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2; /* make sure it's above the image */
+  transition: background-color 0.2s ease;
 }
 
-/* Modal image styling */
+
+.modal-close-button:hover {
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.modal-content {
+  background-color: rgba(255, 255, 255, 1);
+  position: relative;
+  width: 90vw;
+  height: 90vh;
+  padding: 0;
+  overflow: hidden; /* prevent scrollbars */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .modal-image {
   max-width: 100%;
-  max-width: 100%;   /* Scale down the image if too wide */
-  object-fit: contain; /* Ensure the image is fully visible without cropping */
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
 }
