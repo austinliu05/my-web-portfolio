@@ -18,6 +18,9 @@ const skills = [
     { name: 'AWS', imageUrl: 'web_development/aws.webp' },
     { name: 'GCP', imageUrl: 'web_development/gcp.png' },
     { name: 'GitHub', imageUrl: 'web_development/github.png' },
+    { name: 'OpenCV', imageUrl: 'ML_libs/opencv.png' },
+    { name: 'TensorFlow', imageUrl: 'ML_libs/tensorflow.png' },
+
 ];
 
 const SkillsCarousel: React.FC = () => {
