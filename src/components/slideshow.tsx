@@ -97,7 +97,7 @@ const Slideshow: React.FC<SlideshowProps> = ({ items }) => {
                                     )}
                                     {item.diagramURL && (
                                         <button
-                                            className={`project-button ${item.githubURL ? "github-exists" : ""}`}
+                                            className={`slideshow-button ${item.githubURL ? "github-exists" : ""}`}
                                             onClick={() => handleCardClick(item.diagramURL!)}
                                         >
                                             <FontAwesomeIcon icon={faDiagramProject} size="lg" />

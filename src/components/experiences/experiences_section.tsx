@@ -25,8 +25,8 @@ const experienceItems = [
     websiteURL: "https://www.heliostechnologies.ai/",
     videoURL: "",
     githubURL: "",
-    skills: ["React", "Python"],
-    techStack: ["web_development/react.png", "languages/python.png"],
+    skills: ["React", "AWS", "Python", "Neo4j", "Qdrant", "Ollama", "LlamaIndex"],
+    techStack: ["web_development/react.png", "web_development/aws.webp", "languages/python.png", "tools/neo4j.png", "tools/qdrant.png", "tools/ollama.png", "ML_libs/llamaindex.png"],
     diagramURL: "experiences/helios-diagram.png"
   },
   {
@@ -85,7 +85,7 @@ type ViewMode = "slideshow" | "grid";
 
 
 const ExperiencesSection: React.FC = () => {
-  const [viewMode, setViewMode] = useState<ViewMode>("grid");
+  const [viewMode, setViewMode] = useState<ViewMode>("slideshow");
 
   return (
     <section id="experiences" className="section-experiences">
