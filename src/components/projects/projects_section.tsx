@@ -5,6 +5,19 @@ import ToggleSwitch from '../ToggleSwitch';
 
 const projectItems = [
   {
+    title: "Music Sheets to MIDI Files",
+    role: "Researcher",
+    date: "Feb. 2025 - May 2025",
+    description: "This is my CSCI 1470 Deep Learning Final Project. We build an End-to-end Optical Music Recognition system that extracted noteheads from music sheets using OpenCV, trained multiple CNNs to classify them and devised a custom algorithm to calculate the pitches of the notes.",
+    imageURL: "projects/final-project-poster.png",
+    websiteURL: "",
+    videoURL: "",
+    githubURL: "https://github.com/austinliu05/brown-dl-s25-final-project",
+    skills: ["OpenCV", "TensorFlow"],
+    techStack: ["ML_libs/opencv.png", "ML_libs/tensorflow.png"],
+    diagramURL: "projects/final-project-poster.png"
+  },
+  {
     title: "Beya",
     role: "Founding Software Engineer",
     date: "Nov. 2024 - Current",
