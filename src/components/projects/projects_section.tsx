@@ -8,7 +8,7 @@ const projectItems = [
     title: "Music Sheets to MIDI Files",
     role: "Researcher",
     date: "Feb. 2025 - May 2025",
-    description: "This is my CSCI 1470 Deep Learning Final Project. We build an End-to-end Optical Music Recognition system that extracted noteheads from music sheets using OpenCV, trained multiple CNNs to classify them and devised a custom algorithm to calculate the pitches of the notes.",
+    description: "This is my CSCI 1470 Deep Learning Final Project. We built an End-to-end Optical Music Recognition system that extracted noteheads from music sheets using OpenCV, trained multiple CNNs to classify them and devised a custom algorithm to calculate the pitches of the notes.",
     imageURL: "projects/final-project-poster.png",
     websiteURL: "",
     videoURL: "",

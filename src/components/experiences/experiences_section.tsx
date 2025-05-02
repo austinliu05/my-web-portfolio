@@ -19,7 +19,7 @@ const experienceItems = [
   {
     title: "Helios Technologies",
     role: "Software Engineer Intern",
-    date: "Feb.  2025 - Current",
+    date: "Feb.  2025 - May 2025",
     description: "AI chatbots. Creating user friendly UI, optimizing backend RAG workflows and performing QA testing on production deployments.",
     imageURL: "experiences/helios-logo.png",
     gridImageURL: "experiences/grid-helios-logo.png",
