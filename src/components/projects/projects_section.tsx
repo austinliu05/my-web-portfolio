@@ -10,7 +10,7 @@ const projectItems = [
     date: "Feb. 2025 - May 2025",
     description: "This is my CSCI 1470 Deep Learning Final Project. We built an End-to-end Optical Music Recognition system that extracted noteheads from music sheets using OpenCV, trained multiple CNNs to classify them and devised a custom algorithm to calculate the pitches of the notes.",
     imageURL: "projects/final-project-poster.png",
-    websiteURL: "",
+    websiteURL: "https://drive.google.com/file/d/1v4vpcINE19tmXLDHQoq2nxMMFvEATZlN/view?usp=sharing",
     videoURL: "",
     githubURL: "https://github.com/austinliu05/brown-dl-s25-final-project",
     skills: ["OpenCV", "TensorFlow"],
