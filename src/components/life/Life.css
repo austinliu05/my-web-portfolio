@@ -1,0 +1,55 @@
+/* life.css */
+
+/* Container for the Life section */
+.life {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem;
+    background-color: #000000;
+
+    /* make it fill exactly the viewport */
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;  /* ensures padding doesn’t cause overflow */
+    overflow: hidden;         /* hide any overflow if children exceed */
+}
+
+/* Gallery title styling */
+.life .gallery-title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fbfbfb;
+    margin: 0;
+    text-align: center;
+}
+
+/* Controls (Prev/Next buttons) */
+.life .carousel-controls {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+}
+
+.life .carousel-controls button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+.life .carousel-controls button:hover {
+    background-color: #0056b3;
+}
+
+/* Slider container */
+.life .carousel-slider {
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+}
