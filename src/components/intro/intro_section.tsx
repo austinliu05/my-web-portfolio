@@ -39,7 +39,6 @@ const IntroSection: React.FC = () => {
     <section className="section-intro">
       <motion.div
         className={`flip-card ${isFlipped ? "flipped" : ""}`}
-        onClick={handleCardClick}
         whileHover={{ rotateY: 10 }}
         transition={{ type: "spring", stiffness: 300 }}
       >
@@ -53,14 +52,14 @@ const IntroSection: React.FC = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5 }}
             />
-            <motion.div
+            {/* <motion.div
               className="click-me-text"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 0.5 }}
             >
               About Me
-            </motion.div>
+            </motion.div> */}
           </div>
           <div className="flip-card-back">
             <div className="bio-text">

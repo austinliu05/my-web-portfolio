@@ -1,4 +1,4 @@
-import React from 'react';
+// App.tsx
 import './App.css';
 import IntroSection from './components/intro/intro_section';
 import ProjectsSections from './components/projects/projects_section';
@@ -6,16 +6,27 @@ import ExperiencesSection from './components/experiences/experiences_section';
 import Footer from './components/footer/footer';
 import Navbar from './components/navbar/navbar';
 import SkillsCarousel from './components/skills/skills_carousel';
-import CustomCursor from './components/customCursor';
 import ScrollProgressBar from './components/ScrollProgressBar';
-import LifeSection from './components/life/Life';
+import SportsSection from './components/sports/Sports';
+import { useEffect } from 'react';
 
 function App() {
-  return (
+  useEffect(() => {
+    const handler = (event: Event) => {
+      if (
+        event instanceof ErrorEvent &&
+        event.message.includes("ResizeObserver loop completed")
+      ) {
+        event.stopImmediatePropagation();
+      }
+    };
+    window.addEventListener("error", handler, true);
+    return () => window.removeEventListener("error", handler, true);
+  }, []);
 
+  return (
     <div className="App">
       <ScrollProgressBar />
-      {/* <CustomCursor /> */}
       <Navbar />
       <div>
         <IntroSection />
@@ -26,7 +37,7 @@ function App() {
         <hr className="separator" />
         <ExperiencesSection />
         <hr className="separator" />
-        <LifeSection />
+        <SportsSection />
       </div>
       <Footer />
     </div>

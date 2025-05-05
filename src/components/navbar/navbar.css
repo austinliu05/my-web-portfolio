@@ -1,24 +1,32 @@
 .navbar {
     position: fixed;
     top: 0;
-    width: 100%;
-    height: 10%;
-    background-color: #333;
-    color: white;
+    left: 0;
+    right: 0;
+    /* drop height: 10%; */
+    padding: 1rem;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1rem 1rem;
+    /* vertically center everything */
+    justify-content: space-between;
+    box-sizing: border-box;
+    /* include padding in your width */
+    background-color: #333;
+    color: #fff;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .nav-links {
     list-style: none;
     display: flex;
-    gap: 20px;
-    margin-top: 10px;
+    gap: 1.25rem;
+    /* 20px ≃ 1.25rem */
+    margin: 0;
+    /* kill that margin-top */
+    align-items: center;
+    /* just in case */
 }
+
 
 .nav-links a {
     color: white;
@@ -54,9 +62,11 @@
         transform: translateY(-100%);
         opacity: 0;
     }
+
     50% {
         opacity: 1;
     }
+
     100% {
         transform: translateY(0);
         opacity: 1;
@@ -65,16 +75,19 @@
 
 @media (max-width: 640px) {
     .navbar {
-        justify-content: center;  /* Center align navbar content */
+        justify-content: center;
+        /* Center align navbar content */
     }
 
     .nav-logo {
         position: absolute;
         left: 50%;
-        transform: translateX(-50%);  /* Center logo horizontally */
+        transform: translateX(-50%);
+        /* Center logo horizontally */
     }
 
     .nav-links {
-        display: none;  /* Hide nav links */
+        display: none;
+        /* Hide nav links */
     }
 }

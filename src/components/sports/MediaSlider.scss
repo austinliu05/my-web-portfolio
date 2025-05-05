@@ -1,0 +1,101 @@
+// MediaSlider.scss
+
+$grey: #1f1f1f;
+
+.media-slider {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+/* 1. FIXED CONTAINER */
+.media-slider .slider-view {
+    width: 100%;
+    max-width: 80vw;
+    aspect-ratio: 16 / 9;
+    position: relative;
+    overflow: hidden;
+    touch-action: pan-y;
+}
+
+/* 2. SLIDE + MEDIA */
+.media-slider .slide {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    will-change: transform, opacity;
+
+    &>img,
+    &>video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; // default: fill frame
+        object-position: center;
+    }
+
+    /* override for vertical orientation */
+    & .media-content.vertical {
+        object-fit: contain; // letterbox so full height is visible
+        background: #000;
+    }
+}
+
+/* 3. CONTROLS */
+.media-slider .controls {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+    pointer-events: none;
+
+    .arrow {
+        pointer-events: all;
+        color: #fff;
+        font-size: 4vh;
+        border-radius: 50%;
+        cursor: pointer;
+        user-select: none;
+        transition: background-color .2s;
+    }
+}
+
+/* 4. THUMBNAILS */
+.media-slider .thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+
+    .thumb {
+        width: 100px;
+        height: 120px;
+        overflow: hidden;
+        cursor: pointer;
+
+        @media (max-width: 375px) {
+            width: 50px;
+            height: 70px;
+        }
+
+        &>img,
+        &>video {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        &.active>img,
+        &.active>video {
+            outline: 2px solid $grey;
+        }
+    }
+}
