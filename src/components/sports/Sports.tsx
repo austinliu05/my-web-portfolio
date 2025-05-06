@@ -10,6 +10,14 @@ export interface Gallery {
 
 const galleries: Gallery[] = [
     {
+        title: "Marathon",
+        items: [
+            { id: 1, src: "/assets/sports/marathon/marathon3.jpg", type: "image", orientation: "vertical" },
+            { id: 2, src: "/assets/sports/marathon/marathon1.PNG", type: "image", orientation: "horizontal" },
+            { id: 3, src: "/assets/sports/marathon/marathon2.PNG", type: "image", orientation: "horizontal" },
+        ],
+    },
+    {
         title: "Volleyball",
         items: [
             { id: 1, src: "/assets/sports/vball/vball1.mp4", type: "video", orientation: "vertical" },
@@ -22,14 +30,6 @@ const galleries: Gallery[] = [
         items: [
             { id: 1, src: "/assets/sports/vert/vert1.mp4", type: "video", orientation: "vertical" },
             { id: 2, src: "/assets/sports/vert/vert2.mp4", type: "video", orientation: "vertical" },
-        ],
-    },
-    {
-        title: "Vert Training",
-        items: [
-            { id: 1, src: "/assets/sports/marathon/marathon3.jpg", type: "image", orientation: "vertical" },
-            { id: 2, src: "/assets/sports/marathon/marathon1.PNG", type: "image", orientation: "horizontal" },
-            { id: 3, src: "/assets/sports/marathon/marathon2.PNG", type: "image", orientation: "horizontal" },
         ],
     },
 ];
