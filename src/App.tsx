@@ -1,4 +1,4 @@
-// App.tsx
+import { useEffect } from 'react';
 import './App.css';
 import IntroSection from './components/intro/intro_section';
 import ProjectsSections from './components/projects/projects_section';
@@ -8,20 +8,19 @@ import Navbar from './components/navbar/navbar';
 import SkillsCarousel from './components/skills/skills_carousel';
 import ScrollProgressBar from './components/ScrollProgressBar';
 import SportsSection from './components/sports/Sports';
-import { useEffect } from 'react';
 
 function App() {
   useEffect(() => {
-    const handler = (event: Event) => {
-      if (
-        event instanceof ErrorEvent &&
-        event.message.includes("ResizeObserver loop completed")
-      ) {
-        event.stopImmediatePropagation();
+    const handler = (e: ErrorEvent) => {
+      if (e.message === 'ResizeObserver loop limit exceeded') {
+        e.stopImmediatePropagation();
       }
     };
-    window.addEventListener("error", handler, true);
-    return () => window.removeEventListener("error", handler, true);
+    window.addEventListener('error', handler);
+
+    return () => {
+      window.removeEventListener('error', handler); // cleanup on unmount
+    };
   }, []);
 
   return (

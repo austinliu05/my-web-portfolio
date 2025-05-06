@@ -6,11 +6,10 @@
     padding: 2rem;
     background-color: #000000;
 
-    /* make it fill exactly the viewport */
-    height: 100vh;
+    height: 140vh;
     width: 100%;
-    box-sizing: border-box;  /* ensures padding doesn’t cause overflow */
-    overflow: hidden;         /* hide any overflow if children exceed */
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 /* Gallery title styling */
@@ -40,23 +39,53 @@
 }
 
 .sports-section .carousel-controls button {
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    padding: 0.6rem 1.2rem;
-    border-radius: 4px;
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 0.6rem 1.4rem;
     cursor: pointer;
     font-size: 1rem;
-    transition: background-color 0.2s ease;
+    font-weight: 500;
+    transition: all 0.3s ease;
 }
 
 .sports-section .carousel-controls button:hover {
-    background-color: #0056b3;
+    background-color: rgba(255, 255, 255, 0.1);
+    /* soft white tint */
+    transform: scale(1.05);
+    border-color: #ffffff;
 }
 
-/* Slider container */
 .sports-section .carousel-slider {
-    width: 100%;
-    max-width: 800px;
-    overflow: hidden;
+    width: 50%;
+    max-width: 50vw;
+    height: 0vh;         
+}
+
+@media (max-width: 1000px) {
+    .sports-section {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .sports-section .gallery-title {
+        font-size: 1.5rem;
+    }
+
+    .sports-section .intro {
+        font-size: 1rem;
+        max-width: 90%;
+    }
+
+    .sports-section .carousel-controls button {
+        font-size: 0.9rem;
+        padding: 0.5rem 1rem;
+        width: 100%;
+    }
+
+    .sports-section .carousel-slider {
+        max-width: 100%;
+        width: 100%;
+        margin-top: 5vh;
+    }
 }

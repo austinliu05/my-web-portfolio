@@ -9,6 +9,7 @@ export interface MediaItem {
     src: string;
     type: "image" | "video";
     orientation: "horizontal" | "vertical";
+    caption?: string; // optional
 }
 
 interface MediaSliderProps {
