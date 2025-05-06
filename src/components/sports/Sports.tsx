@@ -53,7 +53,7 @@ const SportsSection: React.FC = () => {
                 <div className='title-container'>
                     <h1>More About Me</h1>
                     <p className="intro">
-                        Outside of school, I love staying active and pushing my physical limits!
+                        I love staying active and pushing my physical limits!
                     </p>
                 </div>
             </div>
