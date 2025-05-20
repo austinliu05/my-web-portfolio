@@ -7,7 +7,7 @@ const experienceItems = [
   {
     title: "Symbotic",
     role: "Software Engineer Intern",
-    date: "Incoming Summer 2025",
+    date: "Summer 2025",
     description: "Data Services.",
     imageURL: "experiences/symbotic-logo.jpg",
     websiteURL: "https://www.symbotic.com/",

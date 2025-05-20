@@ -31,7 +31,7 @@ const projectItems = [
   },
   {
     title: "Brown Formula Racing Team",
-    role: "Lead Backend Engineer",
+    role: "Backend Software Architect",
     date: "Oct. 2024 - Current",
     description: "Building a driving data application to optimize driver performance and testing workflows. Managing cloud infrastructure, deploying services on AWS EC2 with load balancing for production-grade reliability. Utilizing S3 for storing car diagnostics, while leveraging Firebase Firestore to manage racing data, driver profiles, and issue logs.",
     imageURL: "projects/brown-fsae.png",

@@ -36,7 +36,7 @@ function App() {
         <hr className="separator" />
         <ExperiencesSection />
         <hr className="separator" />
-        <SportsSection />
+        {/* <SportsSection /> */}
       </div>
       <Footer />
     </div>
