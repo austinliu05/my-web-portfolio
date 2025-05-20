@@ -53,7 +53,8 @@ const experienceItems = [
     videoURL: "https://www.youtube.com/watch?v=rdxR_WoPFOo",
     githubURL: "",
     skills: ["React Expo", "NodeJS", "Firebase", "ChatGPT", "Edamam"],
-    techStack: ["web_development/react-expo.png", "web_development/nodejs.jpg","web_development/firebase.png", "web_development/chatgpt.jpg",  "web_development/edamam.png",]
+    techStack: ["web_development/react-expo.png", "web_development/nodejs.jpg","web_development/firebase.png", "web_development/chatgpt.jpg",  "web_development/edamam.png",],
+    diagramURL: "experiences/bonsai-architecture.png"
   },
   {
     title: "MyDataProduct",

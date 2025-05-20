@@ -7,24 +7,28 @@
 }
 
 .project-card {
-    background-color: #1c1c1c; /* Dark background */
+    background-color: #1c1c1c;
+    /* Dark background */
     border-radius: 12px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
     transition: transform 0.3s ease;
-    border: 1px solid rgba(255, 255, 255, 0.3); /* White border with slight transparency */
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* White border with slight transparency */
 }
 
 .project-card:hover {
     transform: translateY(-5px);
-    border-color: rgba(255, 255, 255, 0.6); /* Make the border more visible on hover */
+    border-color: rgba(255, 255, 255, 0.6);
+    /* Make the border more visible on hover */
 }
 
 .project-image {
+    display: block;
     width: 100%;
-    height: auto;
-    object-fit: cover;
+    height: 23vh;
+    object-fit: fill;
 }
 
 .project-details {
@@ -68,9 +72,11 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-right: 1vw;
 }
-.project-button.github-exists{
+
+.project-button.github-exists {
     margin-right: 10px;
 }
+
 .project-button:hover {
     background-color: #ba7939;
 }
@@ -86,6 +92,7 @@
 .github-button:hover {
     background-color: #444;
 }
+
 .image-container {
     position: relative;
 }
@@ -112,4 +119,3 @@
 .image-container:hover .hover-overlay {
     opacity: 1;
 }
-
