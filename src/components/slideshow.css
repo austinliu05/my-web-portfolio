@@ -122,7 +122,7 @@
 }
 
 .slideshow-button {
-    background-color: var(--primary-color, #ED1C24);
+    background-color: #623304;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -138,7 +138,7 @@
     margin-right: 10px;
 }
 .slideshow-button:hover {
-    background-color: #c51b21;
+    background-color: #ba7939;
 }
 
 .github-button {
