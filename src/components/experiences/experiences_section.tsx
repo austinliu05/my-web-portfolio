@@ -17,13 +17,13 @@ const experienceItems = [
     techStack: ["languages/c-sharp.png", "languages/sql.png"]
   },
   {
-    title: "Helios Technologies",
+    title: "Stealth Startup",
     role: "Software Engineer Intern",
     date: "Feb.  2025 - May 2025",
     description: "AI chatbots. Creating user friendly UI, optimizing backend RAG workflows and performing QA testing on production deployments.",
     imageURL: "experiences/helios-logo.png",
-    gridImageURL: "experiences/grid-helios-logo.png",
-    websiteURL: "https://www.heliostechnologies.ai/",
+    gridImageURL: "experiences/stealth-startup.jpg",
+    websiteURL: "",
     videoURL: "",
     githubURL: "",
     skills: ["React", "AWS", "Python", "Neo4j", "Qdrant", "Ollama", "LlamaIndex"],
