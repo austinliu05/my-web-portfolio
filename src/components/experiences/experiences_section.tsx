@@ -47,13 +47,13 @@ const experienceItems = [
     title: "Stealth Startup",
     role: "Software Engineer Intern",
     date: "June  2024 - Aug. 2024",
-    description: "Developed an MVP for startup. Implemented CRUD functionalities through NodeJS server. Integrated backend with ChatGPT's API for advanced smoothie personalization, Edamam's API for nutritional data, and Firebase for real-time database storage.",
+    description: "Developed an MVP for startup. Implemented CRUD functionalities through ExpressJS server. Integrated backend with ChatGPT's API for advanced smoothie personalization, Edamam's API for nutritional data, and Firebase for real-time database storage.",
     imageURL: "experiences/bonsai-architecture.png",
     websiteURL: "",
     videoURL: "https://www.youtube.com/watch?v=rdxR_WoPFOo",
     githubURL: "",
-    skills: ["React Expo", "NodeJS", "Firebase", "ChatGPT", "Edamam"],
-    techStack: ["web_development/react-expo.png", "web_development/nodejs.jpg","web_development/firebase.png", "web_development/chatgpt.jpg",  "web_development/edamam.png",],
+    skills: ["React Expo", "ExpressJS", "Firebase", "ChatGPT", "Edamam"],
+    techStack: ["web_development/react-expo.png", "web_development/expressjs.webp","web_development/firebase.png", "web_development/chatgpt.jpg",  "web_development/edamam.png",],
     diagramURL: "experiences/bonsai-architecture.png"
   },
   {

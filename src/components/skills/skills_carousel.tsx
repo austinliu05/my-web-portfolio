@@ -11,7 +11,7 @@ const skills = [
     { name: 'React Expo', imageUrl: 'web_development/react-expo.png' },
     { name: 'Flask', imageUrl: 'web_development/flask.png' },
     { name: 'Django', imageUrl: 'web_development/django.png' },
-    { name: 'NodeJS', imageUrl: 'web_development/nodejs.png' },
+    { name: 'ExpressJS', imageUrl: 'web_development/expressjs.webp' },
     { name: 'Bootstrap', imageUrl: 'web_development/bootstrap.svg' },
     { name: 'Tailwind CSS', imageUrl: 'web_development/tailwindcss.png' },
     { name: 'Firebase', imageUrl: 'web_development/firebase.png' },

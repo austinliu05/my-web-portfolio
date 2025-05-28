@@ -64,20 +64,20 @@ const projectItems = [
     websiteURL: "",
     videoURL: "https://youtu.be/xPVssnxfOVs",
     githubURL: "https://github.com/austinliu05/pay-your-friends",
-    skills: ["React", "Bootstrap", "Firebase", "NodeJS"],
-    techStack: ["web_development/react.png", "web_development/bootstrap.svg", "web_development/firebase.png", "web_development/nodejs.jpg"]
+    skills: ["React", "Bootstrap", "Firebase", "ExpressJS"],
+    techStack: ["web_development/react.png", "web_development/bootstrap.svg", "web_development/firebase.png", "web_development/expressjs.webp"]
   },
   {
     title: "WordHunt Online",
     role: "Individual Contributor",
     date: "Oct. 2024 - Nov. 2024",
-    description: "Inspired by the WordHunt game on GamePigeon, I developed a lightweight web version using React, Node.js, and Firebase. The application includes core gameplay mechanics, and I’m currently working on adding AI-driven bot difficulty levels and a real-time multiplayer system.",
+    description: "Inspired by the WordHunt game on GamePigeon, I developed a lightweight web version using React, ExpressJS, and Firebase. The application includes core gameplay mechanics, and I’m currently working on adding AI-driven bot difficulty levels and a real-time multiplayer system.",
     imageURL: "projects/wordhunt-online.png",
     websiteURL: "https://wordhunt-online.vercel.app/",
     videoURL: "https://youtu.be/TtuDezyLU9g",
     githubURL: "https://github.com/austinliu05/wordhunt-online",
-    skills: ["React", "Bootstrap", "Firebase", "NodeJS", "Socket.IO"],
-    techStack: ["web_development/react.png", "web_development/bootstrap.svg", "web_development/firebase.png", "web_development/nodejs.jpg", "web_development/socketio.png",]
+    skills: ["React", "Bootstrap", "Firebase", "ExpressJS", "Socket.IO"],
+    techStack: ["web_development/react.png", "web_development/bootstrap.svg", "web_development/firebase.png", "web_development/expressjs.webp", "web_development/socketio.png",]
   },
   {
     title: "Find My Food",
