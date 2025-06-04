@@ -8,7 +8,7 @@ const experienceItems = [
     title: "Symbotic",
     role: "Software Engineer Intern",
     date: "Summer 2025",
-    description: "Data Services team. Using C# and SQL to manage Walmart warehosues. Developed database health check procedures to maintain data integrity and find invalid data anomalies. Built a user-friendly interface, following strict OOD (Object-Oriented-Design) and MVVM (Model-View-ViewModel) patterns. ",
+    description: "Data Services team. Using C# and SQL to manage Walmart warehouses. Developed database health check procedures to maintain data integrity and find invalid data anomalies. Built a user-friendly interface, following strict OOD (Object-Oriented-Design) and MVVM (Model-View-ViewModel) patterns. ",
     imageURL: "experiences/symbotic-logo.jpg",
     websiteURL: "https://www.symbotic.com/",
     videoURL: "",
