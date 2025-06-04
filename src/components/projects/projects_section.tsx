@@ -57,7 +57,7 @@ const projectItems = [
   },
   {
     title: "VFS and S5FS File Systems",
-    role: "Researcher",
+    role: "Student",
     date: "April 2025 - May 2025",
     description: "Using my knowledge of C and Linux kernel programming, I implemented two file systems: VFS (Virtual File System) and S5FS (a simple file system). The project involved creating a custom file system that supports basic operations like reading, writing, and deleting files, while also ensuring compatibility with the Linux kernel's VFS layer. Due to Brown's academic policy, I am unable to share the code publicly.",
     imageURL: "projects/os.webp",
