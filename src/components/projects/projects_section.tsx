@@ -30,8 +30,20 @@ const projectItems = [
     techStack: ["web_development/react-expo.png", "web_development/tailwindcss.png", "web_development/firebase.png", "web_development/aws.jpg", "web_development/stripe.jpg",]
   },
   {
+    title: "Guitar Tab Transformer",
+    role: "Researcher",
+    date: "June 2024 - Current",
+    description: "As an avid guitarist, I've decided to take on the challenge of designing a custom neural network to automatically transpose any song into guitar tabs from the audio file. I am currently collaborating with Claude Hu, a machine learning researcher at University of Virginia.",
+    imageURL: "projects/guitar-tab-transformer.jpeg",
+    websiteURL: "https://guitar-tab-transformer.vercel.app/",
+    videoURL: "",
+    githubURL: "https://github.com/austinliu05/guitar-tab-transformer",
+    skills: ["React", "Django", "OpenCV"],
+    techStack: ["web_development/react.png", "web_development/django.png", "ML_libs/opencv.png"]
+  },
+  {
     title: "Brown Formula Racing Team",
-    role: "Backend Software Architect",
+    role: "Backend Software Lead",
     date: "Oct. 2024 - Current",
     description: "Building a driving data application to optimize driver performance and testing workflows. Managing cloud infrastructure, deploying services on AWS EC2 with load balancing for production-grade reliability. Utilizing S3 for storing car diagnostics, while leveraging Firebase Firestore to manage racing data, driver profiles, and issue logs.",
     imageURL: "projects/brown-fsae.png",
@@ -44,16 +56,16 @@ const projectItems = [
     diagramURL: "projects/brown-fsae-architecture.png"
   },
   {
-    title: "Guitar Tab Transformer",
+    title: "VFS and S5FS File Systems",
     role: "Researcher",
-    date: "June 2024 - Current",
-    description: "As an avid guitarist, I've decided to take on the challenge of designing a custom neural network to automatically transpose any song into guitar tabs from the audio file. I am currently collaborating with Claude Hu, a machine learning researcher at University of Virginia.",
-    imageURL: "projects/guitar-tab-transformer.jpeg",
-    websiteURL: "https://guitar-tab-transformer.vercel.app/",
+    date: "April 2025 - May 2025",
+    description: "Using my knowledge of C and Linux kernel programming, I implemented two file systems: VFS (Virtual File System) and S5FS (a simple file system). The project involved creating a custom file system that supports basic operations like reading, writing, and deleting files, while also ensuring compatibility with the Linux kernel's VFS layer. Due to Brown's academic policy, I am unable to share the code publicly.",
+    imageURL: "projects/os.webp",
+    websiteURL: "",
     videoURL: "",
-    githubURL: "https://github.com/austinliu05/guitar-tab-transformer",
-    skills: ["React", "Django", "OpenCV"],
-    techStack: ["web_development/react.png", "web_development/django.png", "ML_libs/opencv.png"]
+    githubURL: "",
+    skills: ["C"],
+    techStack: ["languages/c.png"]
   },
   {
     title: "Pay Your Friend",

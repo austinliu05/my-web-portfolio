@@ -5,6 +5,8 @@ import { ASSETS_SKILLS_BASE_PATH } from '../../constants';
 const skills = [
     { name: 'Python', imageUrl: 'languages/python.png' },
     { name: 'C++', imageUrl: 'languages/c++.png' },
+    { name: 'C', imageUrl: 'languages/c.png' },
+    { name: 'C#', imageUrl: 'languages/c-sharp.png' },
     { name: 'Java', imageUrl: 'languages/java.png' },
     { name: 'TypeScript', imageUrl: 'languages/typescript.png' },
     { name: 'React', imageUrl: 'web_development/react.png' },
@@ -20,7 +22,6 @@ const skills = [
     { name: 'GitHub', imageUrl: 'web_development/github.png' },
     { name: 'OpenCV', imageUrl: 'ML_libs/opencv.png' },
     { name: 'TensorFlow', imageUrl: 'ML_libs/tensorflow.png' },
-
 ];
 
 const SkillsCarousel: React.FC = () => {
