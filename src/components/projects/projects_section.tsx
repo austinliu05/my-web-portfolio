@@ -5,23 +5,10 @@ import ToggleSwitch from '../ToggleSwitch';
 
 const projectItems = [
   {
-    title: "Music Sheets to MIDI Files",
-    role: "Researcher",
-    date: "Feb. 2025 - May 2025",
-    description: "This is my CSCI 1470 Deep Learning Final Project. We built an End-to-end Optical Music Recognition system that extracted noteheads from music sheets using OpenCV, trained multiple CNNs to classify them and devised a custom algorithm to calculate the pitches of the notes.",
-    imageURL: "projects/final-project-poster.png",
-    websiteURL: "https://drive.google.com/file/d/1v4vpcINE19tmXLDHQoq2nxMMFvEATZlN/view?usp=sharing",
-    videoURL: "",
-    githubURL: "https://github.com/austinliu05/brown-dl-s25-final-project",
-    skills: ["OpenCV", "TensorFlow"],
-    techStack: ["ML_libs/opencv.png", "ML_libs/tensorflow.png"],
-    diagramURL: "projects/final-project-poster.png"
-  },
-  {
     title: "Beya",
     role: "Founding Software Engineer",
     date: "Nov. 2024 - Current",
-    description: "Supporting small businesses with inventory management, event and locales proximity-based features, minimum-fee transactions, and analytics. Startup @ Brown. App store release soon!",
+    description: "Supporting small businesses with inventory management, event and locales proximity-based features, minimum-fee transactions, and analytics. Built custom RAG pipeline to allow users to edit and deploy custom websites. Generated over 20k ARR.",
     imageURL: "projects/beya-logo.png",
     websiteURL: "https://usebeya.com/",
     videoURL: "",
@@ -54,6 +41,19 @@ const projectItems = [
     skills: ["React", "Tailwind CSS", "Firebase", "AWS"],
     techStack: ["web_development/react.png", "web_development/tailwindcss.png", "web_development/firebase.png", "web_development/aws.jpg"],
     diagramURL: "projects/brown-fsae-architecture.png"
+  },
+  {
+    title: "Music Sheets to MIDI Files",
+    role: "Researcher",
+    date: "Feb. 2025 - May 2025",
+    description: "This is my CSCI 1470 Deep Learning Final Project. We built an End-to-end Optical Music Recognition system that extracted noteheads from music sheets using OpenCV, trained multiple CNNs to classify them and devised a custom algorithm to calculate the pitches of the notes.",
+    imageURL: "projects/final-project-poster.png",
+    websiteURL: "https://drive.google.com/file/d/1v4vpcINE19tmXLDHQoq2nxMMFvEATZlN/view?usp=sharing",
+    videoURL: "",
+    githubURL: "https://github.com/austinliu05/brown-dl-s25-final-project",
+    skills: ["OpenCV", "TensorFlow"],
+    techStack: ["ML_libs/opencv.png", "ML_libs/tensorflow.png"],
+    diagramURL: "projects/final-project-poster.png"
   },
   {
     title: "VFS and S5FS File Systems",
