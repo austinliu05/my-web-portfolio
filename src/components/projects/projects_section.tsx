@@ -8,7 +8,7 @@ const projectItems = [
     title: "Leetcode Helper",
     role: "Individual Contributor",
     date: "July 2025 - Current",
-    description: "Fun chrome extension to aid me in my DSA practice to highlight keywords in problem descriptions to help me better dissect problems and determine which topic its testing me on. Working on a custom ML model to analyze the problem descriptions instead of hard coding keywords in a dictionary.",
+    description: "Fun chrome extension to aid me in my DSA practice. Goal is to highlight keywords in problem descriptions to efficienlty dissect problems and determine the topic its testing. Working on a custom ML model to analyze the problem descriptions instead of hard coding keywords in a dictionary.",
     imageURL: "projects/lc-helper.png",
     websiteURL: "",
     videoURL: "",
