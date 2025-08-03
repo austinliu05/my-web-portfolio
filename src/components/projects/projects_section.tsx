@@ -9,12 +9,12 @@ const projectItems = [
     role: "Individual Contributor",
     date: "July 2025 - Current",
     description: "Fun chrome extension to aid me in my DSA practice. Goal is to highlight keywords in problem descriptions to efficienlty dissect problems and determine the topic its testing. Working on a custom ML model to analyze the problem descriptions instead of hard coding keywords in a dictionary.",
-    imageURL: "projects/lc-helper.png",
+    imageURL: "projects/lc-helper.webp",
     websiteURL: "",
     videoURL: "",
     githubURL: "https://github.com/austinliu05/lc-helper",
-    skills: [],
-    techStack: []
+    skills: ["AWS"],
+    techStack: ["web_development/aws.jpg"]
   },
   {
     title: "Beya",
