@@ -32,7 +32,7 @@ const projectItems = [
     title: "Guitar Tab Transformer",
     role: "Researcher",
     date: "June 2024 - Current",
-    description: "As an avid guitarist, I've decided to take on the challenge of designing a custom neural network to automatically transpose any song into guitar tabs from the audio file. I am currently collaborating with Claude Hu, a machine learning researcher at University of Virginia. So far, we have been modifying dadaGP, an open source package to process guitar pro files to feed into our tokenizer and eventually our custom transformer model.",
+    description: "As an avid guitarist, I've decided to take on the challenge of designing a transformer model to automatically transpose any song into guitar tabs from the audio file. I am currently collaborating with Claude Hu, a machine learning researcher at University of Virginia. So far, we have been modifying dadaGP, an open source package to process guitar pro files to feed into our tokenizer and eventually our custom transformer model.",
     imageURL: "projects/guitar-tab-transformer.jpeg",
     websiteURL: "https://guitar-tab-transformer.vercel.app/",
     videoURL: "",
