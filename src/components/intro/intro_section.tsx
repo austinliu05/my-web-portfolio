@@ -47,7 +47,7 @@ const IntroSection: React.FC = () => {
           <div className="flip-card-front">
             <motion.img
               className="headshot"
-              src={`${process.env.PUBLIC_URL}/assets/headshot.JPG`}
+              src={`${process.env.PUBLIC_URL}/assets/headshot.jpg`}
               alt="Austin Liu"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
