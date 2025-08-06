@@ -41,6 +41,7 @@ const IntroSection: React.FC = () => {
         className={`flip-card ${isFlipped ? "flipped" : ""}`}
         whileHover={{ rotateY: 10 }}
         transition={{ type: "spring", stiffness: 300 }}
+        onClick={handleCardClick}
       >
         <div className="flip-card-inner">
           <div className="flip-card-front">

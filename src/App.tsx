@@ -7,7 +7,6 @@ import Footer from './components/footer/footer';
 import Navbar from './components/navbar/navbar';
 import SkillsCarousel from './components/skills/skills_carousel';
 import ScrollProgressBar from './components/ScrollProgressBar';
-import SportsSection from './components/sports/Sports';
 
 function App() {
   useEffect(() => {
