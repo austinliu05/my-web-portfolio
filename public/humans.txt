@@ -1,0 +1,14 @@
+/* TEAM */
+Developer: Austin Liu
+Contact: austin_liu [at] brown.edu
+From: Providence, Rhode Island, USA
+
+/* THANKS */
+Built with React, TypeScript, and Framer Motion
+Hosted on GitHub Pages
+
+/* SITE */
+Last update: 2024/12/19
+Language: English
+Doctype: HTML5
+IDE: Cursor, VS Code

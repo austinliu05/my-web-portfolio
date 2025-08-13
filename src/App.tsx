@@ -26,7 +26,7 @@ function App() {
     <div className="App">
       <ScrollProgressBar />
       <Navbar />
-      <div>
+      <main role="main">
         <IntroSection />
         <hr className="separator" />
         <SkillsCarousel />
@@ -36,7 +36,7 @@ function App() {
         <ExperiencesSection />
         <hr className="separator" />
         {/* <SportsSection /> */}
-      </div>
+      </main>
       <Footer />
     </div>
   );

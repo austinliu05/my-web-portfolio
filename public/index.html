@@ -8,6 +8,17 @@
       }
     </style>
     <link rel="icon" href="assets/logo.png" type="image/x-icon" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="assets/headshot.jpg" as="image" type="image/jpeg" />
+    <link rel="preload" href="assets/logo.png" as="image" type="image/png" />
+    
+    <!-- DNS Prefetch and Preconnect for external resources -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com" />
+    <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+    
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,26 +31,63 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Austin Liu - Applied Math-Computer Science and Economics student at Brown University. Software developer with experience in full-stack development, machine learning, and entrepreneurship." />
+    <meta name="keywords" content="Austin Liu, Brown University, Software Developer, Computer Science, Applied Mathematics, Economics, Full Stack Developer, Machine Learning, React, TypeScript, Python, Portfolio" />
+    <meta name="author" content="Austin Liu" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://austinliu.dev/" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Austin Liu - Software Developer & Student" />
+    <meta property="og:description" content="Applied Math-Computer Science and Economics student at Brown University. Passionate about full-stack development, machine learning, and building innovative solutions." />
+    <meta property="og:image" content="https://austinliu.dev/assets/headshot.jpg" />
+    <meta property="og:url" content="https://austinliu.dev/" />
+    <meta property="og:site_name" content="Austin Liu Portfolio" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="Austin Liu - Software Developer & Student" />
+    <meta property="twitter:description" content="Applied Math-Computer Science and Economics student at Brown University. Passionate about full-stack development, machine learning, and building innovative solutions." />
+    <meta property="twitter:image" content="https://austinliu.dev/assets/headshot.jpg" />
+    
+    <!-- Additional SEO -->
+    <meta name="application-name" content="Austin Liu Portfolio" />
+    <meta name="apple-mobile-web-app-title" content="Austin Liu" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/assets/logo.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>austin liu</title>
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Austin Liu",
+      "url": "https://austinliu.dev",
+      "image": "https://austinliu.dev/assets/headshot.jpg",
+      "jobTitle": "Software Developer",
+      "worksFor": {
+        "@type": "EducationalOrganization",
+        "name": "Brown University"
+      },
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "Brown University"
+      },
+      "knowsAbout": ["Software Development", "Machine Learning", "Applied Mathematics", "Computer Science", "Economics", "Full Stack Development", "React", "TypeScript", "Python"],
+      "sameAs": [
+        "https://github.com/austinliu",
+        "https://linkedin.com/in/austinliu"
+      ]
+    }
+    </script>
+    
+    <title>Austin Liu - Software Developer & Student | Brown University</title>
   </head>
   <!-- Google tag (gtag.js) -->
   <script
@@ -57,7 +105,7 @@
   </script>
 
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <noscript>You need to enable JavaScript to run this app. Austin Liu's portfolio requires JavaScript for the best experience.</noscript>
     <div id="root"></div>
     <!--
       This HTML file is a template.

@@ -1,3 +1,14 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+
+# Sitemap
+Sitemap: https://austinliu.dev/sitemap.xml
+
+# Disallow crawling of certain file types
+Disallow: *.pdf$
+Disallow: *.doc$
+Disallow: *.docx$
+
+# Allow important files
+Allow: /assets/AustinLiuResume.pdf
