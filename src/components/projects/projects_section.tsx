@@ -18,7 +18,7 @@ const projectItems = [
   },
   {
     title: "Beya",
-    role: "Founding Software Engineer",
+    role: "Software Engineer",
     date: "Nov. 2024 - Current",
     description: "Supporting small businesses with inventory management, CRMs, and analytics. Built custom RAG pipeline to allow users to edit and deploy custom websites. Generated over 20k ARR.",
     imageURL: "projects/beya-logo.png",
