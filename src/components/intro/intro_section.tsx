@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import "./intro_section.css";
+import ThemeToggle from "../ThemeToggle/ThemeToggle";
 
 const IntroSection: React.FC = () => {
   const [showText, setShowText] = useState(false);
@@ -37,6 +38,11 @@ const IntroSection: React.FC = () => {
 
   return (
     <section className="section-intro">
+      {/* Theme Toggle positioned in top-right corner */}
+      <div className="intro-theme-toggle">
+        <ThemeToggle />
+      </div>
+      
       <motion.div
         className={`flip-card ${isFlipped ? "flipped" : ""}`}
         whileHover={{ rotateY: 10 }}

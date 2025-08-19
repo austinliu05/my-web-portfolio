@@ -2,6 +2,22 @@
     --brown-university-red: #ED1C24;
 }
 
+/* Theme Toggle Positioning */
+.intro-theme-toggle {
+    position: absolute;
+    top: 4rem;
+    right: 2rem;
+    z-index: 100;
+}
+
+/* Responsive theme toggle positioning */
+@media (max-width: 768px) {
+    .intro-theme-toggle {
+        top: 3rem;
+        right: 1rem;
+    }
+}
+
 /* Flip Card Container */
 .flip-card {
     display: inline-block;

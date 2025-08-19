@@ -4,7 +4,9 @@ body {
   font-family: "Outfit", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: white;
+  color: var(--text-primary);
+  background-color: var(--background-white);
+  transition: background-color var(--transition-speed) ease, color var(--transition-speed) ease;
 }
 
 h1{

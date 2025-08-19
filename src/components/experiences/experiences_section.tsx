@@ -6,8 +6,8 @@ import ToggleSwitch from '../ToggleSwitch';
 const experienceItems = [
   {
     title: "Symbotic",
-    role: "Software Engineer Intern",
-    date: "Summer 2025",
+    role: "SWE Intern",
+    date: "May 2025 - Aug. 2025",
     description: "Data Services team. Using C# and SQL to manage Walmart warehouses. Developed database health check procedures to maintain data integrity and find invalid data anomalies. Built a user-friendly interface, following strict OOD (Object-Oriented-Design) and MVVM (Model-View-ViewModel) patterns. ",
     imageURL: "experiences/symbotic-logo.jpg",
     websiteURL: "https://www.symbotic.com/",
@@ -18,7 +18,7 @@ const experienceItems = [
   },
   {
     title: "Helios Technologies",
-    role: "Software Engineer Intern",
+    role: "SWE Intern",
     date: "Feb.  2025 - May 2025",
     description: "AI chatbots. Creating user friendly UI, optimizing backend RAG workflows and performing QA testing on production deployments.",
     imageURL: "experiences/helios-logo.png",
@@ -32,7 +32,7 @@ const experienceItems = [
   },
   {
     title: "sai (Study AI)",
-    role: "Software Engineer Intern",
+    role: "SWE Intern",
     date: "Nov.  2024 - Jan. 2025",
     description: "Designing AI-powered application to enhance learning management systems (e.g. Canvas, Blackboard). Spearheading integrations for campuses across the U.S., including Cornell, UPenn, NYU, and Dartmouth, to improve educational workflows. Using MERN framework to build scalable  solutions, ensuring seamless user experiences and efficient backend operations.",
     imageURL: "experiences/sai-logo.png",
@@ -45,7 +45,7 @@ const experienceItems = [
   },
   {
     title: "Stealth Startup",
-    role: "Software Engineer Intern",
+    role: "SWE Intern",
     date: "June  2024 - Aug. 2024",
     description: "Developed an MVP for startup. Implemented CRUD functionalities through ExpressJS server. Integrated backend with ChatGPT's API for advanced smoothie personalization, Edamam's API for nutritional data, and Firebase for real-time database storage.",
     imageURL: "experiences/bonsai-architecture.png",
@@ -58,7 +58,7 @@ const experienceItems = [
   },
   {
     title: "MyDataProduct",
-    role: "Software Engineering Intern",
+    role: "SWE Intern",
     date: "Feb. 2024 - May 2024",
     description: "Participated in daily stand-ups to support agile software development. Enhanced  devlopment by conducting SPIKEs on industry-standard APIs, and designing config YAML files with consideration for downstream impact. Automated development operations, including scripting GCP SSL certificate renewal and conducted Quality Assurance (QA) reviews on merge requests.",
     imageURL: "experiences/mdp-logo.png",

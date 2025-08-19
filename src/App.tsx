@@ -7,6 +7,7 @@ import Footer from './components/footer/footer';
 import Navbar from './components/navbar/navbar';
 import SkillsCarousel from './components/skills/skills_carousel';
 import ScrollProgressBar from './components/ScrollProgressBar';
+import { ThemeProvider } from './contexts/ThemeContext';
 
 function App() {
   useEffect(() => {
@@ -23,22 +24,24 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <ScrollProgressBar />
-      <Navbar />
-      <main role="main">
-        <IntroSection />
-        <hr className="separator" />
-        <SkillsCarousel />
-        <hr className="separator" />
-        <ProjectsSections />
-        <hr className="separator" />
-        <ExperiencesSection />
-        <hr className="separator" />
-        {/* <SportsSection /> */}
-      </main>
-      <Footer />
-    </div>
+    <ThemeProvider>
+      <div className="App">
+        <ScrollProgressBar />
+        <Navbar />
+        <main role="main">
+          <IntroSection />
+          <hr className="separator" />
+          <SkillsCarousel />
+          <hr className="separator" />
+          <ProjectsSections />
+          <hr className="separator" />
+          <ExperiencesSection />
+          <hr className="separator" />
+          {/* <SportsSection /> */}
+        </main>
+        <Footer />
+      </div>
+    </ThemeProvider>
   );
 }
 
