@@ -67,11 +67,22 @@
 /* Dark mode specific styles */
 [data-theme="dark"] .toggle-track {
   background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3), 0 0 16px rgba(255, 255, 255, 0.1);
 }
 
 [data-theme="dark"] .toggle-thumb {
   background: #1e293b;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4), 0 0 8px rgba(255, 255, 255, 0.4);
+}
+
+/* Enhanced glow effect for dark mode */
+[data-theme="dark"] .theme-toggle {
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.2));
+}
+
+[data-theme="dark"] .theme-toggle:hover {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.4));
+  background-color: rgba(255, 255, 255, 0.1);
 }
 
 /* Responsive adjustments */

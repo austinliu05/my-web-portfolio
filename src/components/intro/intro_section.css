@@ -4,16 +4,16 @@
 
 /* Theme Toggle Positioning */
 .intro-theme-toggle {
-    position: absolute;
-    top: 4rem;
+    position: fixed;
+    top: 5rem;
     right: 2rem;
-    z-index: 100;
+    z-index: 1000;
 }
 
 /* Responsive theme toggle positioning */
 @media (max-width: 768px) {
     .intro-theme-toggle {
-        top: 3rem;
+        top: 4rem;
         right: 1rem;
     }
 }
