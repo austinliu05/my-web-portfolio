@@ -11,4 +11,4 @@ Disallow: *.doc$
 Disallow: *.docx$
 
 # Allow important files
-Allow: /assets/AustinLiuResume.pdf
+Allow: /assets/Austin_Liu_Resume.pdf

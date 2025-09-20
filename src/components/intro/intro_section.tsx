@@ -109,7 +109,7 @@ const IntroSection: React.FC = () => {
 
         <div className="resume">
           <a
-            href={`${process.env.PUBLIC_URL}/assets/AustinLiuResume.pdf`}
+            href={`${process.env.PUBLIC_URL}/assets/Austin_Liu_Resume.pdf`}
             rel="noopener noreferrer"
             target="_blank"
           >
