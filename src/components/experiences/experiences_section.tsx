@@ -17,7 +17,7 @@ const experienceItems = [
     techStack: ["languages/c-sharp.png", "languages/sql.png"]
   },
   {
-    title: "Helios Technologies",
+    title: "Stealth Startup (Helios)",
     role: "SWE Intern",
     date: "Feb.  2025 - May 2025",
     description: "AI chatbots. Creating user friendly UI, optimizing backend RAG workflows and performing QA testing on production deployments.",
