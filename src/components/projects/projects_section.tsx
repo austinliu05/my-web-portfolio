@@ -38,7 +38,8 @@ const projectItems = [
     videoURL: "",
     githubURL: "https://github.com/austinliu05/guitar-tab-transformer",
     skills: ["React", "Django", "OpenCV"],
-    techStack: ["web_development/react.png", "web_development/django.png", "ML_libs/opencv.png"]
+    techStack: ["web_development/react.png", "web_development/django.png", "ML_libs/opencv.png"],
+    diagramURL: "projects/gtt-paper.pdf"
   },
   {
     title: "Brown Formula Racing Team",

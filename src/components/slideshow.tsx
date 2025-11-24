@@ -122,7 +122,15 @@ const Slideshow: React.FC<SlideshowProps> = ({ items }) => {
                 <div className="modal-overlay" onClick={() => setShowModal(false)}>
                     <div className="modal-content" onClick={(e) => e.stopPropagation()}>
                         <button className="modal-close-button" onClick={() => setShowModal(false)}>×</button>
-                        <img src={`${ASSETS_BASE_PATH}${modalImage}`} alt="Diagram" className="modal-image" />
+                        {modalImage.endsWith('.pdf') ? (
+                            <iframe 
+                                src={`${ASSETS_BASE_PATH}${modalImage}`} 
+                                className="modal-image"
+                                title="Diagram PDF"
+                            />
+                        ) : (
+                            <img src={`${ASSETS_BASE_PATH}${modalImage}`} alt="Diagram" className="modal-image" />
+                        )}
                     </div>
                 </div>
             )}
