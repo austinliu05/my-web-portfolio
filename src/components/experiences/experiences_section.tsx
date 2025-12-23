@@ -5,6 +5,19 @@ import ToggleSwitch from '../ToggleSwitch';
 
 const experienceItems = [
   {
+    title: "Persona Identities",
+    role: "SWE Intern",
+    date: "May 2026 - Aug. 2026",
+    description: "Incoming Summer 2026",
+    imageURL: "experiences/persona.png",
+    gridImageURL: "experiences/persona.png",
+    websiteURL: "https://withpersona.com/",
+    videoURL: "",
+    githubURL: "",
+    skills: ["Ruby"],
+    techStack: ["languages/ruby.png"]
+  },
+  {
     title: "Symbotic",
     role: "SWE Intern",
     date: "May 2025 - Aug. 2025",
