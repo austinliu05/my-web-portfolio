@@ -5,30 +5,6 @@ import ToggleSwitch from '../ToggleSwitch';
 
 const projectItems = [
   {
-    title: "Leetcode Helper",
-    role: "Individual Contributor",
-    date: "July 2025 - Aug. 2025",
-    description: "Fun chrome extension to aid me in my DSA practice. Goal is to highlight keywords in problem descriptions to efficiently dissect problems and determine the topic its testing. Working on a custom ML model to analyze the problem descriptions instead of hard coding keywords in a dictionary.",
-    imageURL: "projects/lc-helper.png",
-    websiteURL: "",
-    videoURL: "",
-    githubURL: "https://github.com/austinliu05/lc-helper",
-    skills: ["AWS"],
-    techStack: ["web_development/aws.jpg"]
-  },
-  {
-    title: "Beya",
-    role: "Software Engineer",
-    date: "Nov. 2024 - Current",
-    description: "Supporting small businesses with inventory management, CRMs, and analytics. Built custom RAG pipeline to allow users to edit and deploy custom websites. Generated over 20k ARR.",
-    imageURL: "projects/beya-logo.png",
-    websiteURL: "https://usebeya.com/",
-    videoURL: "",
-    githubURL: "",
-    skills: ["React Expo", "Tailwind CSS", "Firebase", "AWS", "Stripe"],
-    techStack: ["web_development/react-expo.png", "web_development/tailwindcss.png", "web_development/firebase.png", "web_development/aws.jpg", "web_development/stripe.jpg",]
-  },
-  {
     title: "Guitar Tab Transformer",
     role: "Researcher",
     date: "June 2024 - Current",
@@ -54,6 +30,30 @@ const projectItems = [
     skills: ["React", "Tailwind CSS", "Firebase", "AWS"],
     techStack: ["web_development/react.png", "web_development/tailwindcss.png", "web_development/firebase.png", "web_development/aws.jpg"],
     diagramURL: "projects/brown-fsae-architecture.png"
+  },
+  {
+    title: "Leetcode Helper",
+    role: "Individual Contributor",
+    date: "July 2025 - Aug. 2025",
+    description: "Fun chrome extension to aid me in my DSA practice. Goal is to highlight keywords in problem descriptions to efficiently dissect problems and determine the topic its testing. Working on a custom ML model to analyze the problem descriptions instead of hard coding keywords in a dictionary.",
+    imageURL: "projects/lc-helper.png",
+    websiteURL: "",
+    videoURL: "",
+    githubURL: "https://github.com/austinliu05/lc-helper",
+    skills: ["AWS"],
+    techStack: ["web_development/aws.jpg"]
+  },
+  {
+    title: "Beya",
+    role: "Software Engineer",
+    date: "Nov. 2024 - Current",
+    description: "Supporting small businesses with inventory management, CRMs, and analytics. Built custom RAG pipeline to allow users to edit and deploy custom websites. Generated over 20k ARR.",
+    imageURL: "projects/beya-logo.png",
+    websiteURL: "https://usebeya.com/",
+    videoURL: "",
+    githubURL: "",
+    skills: ["React Expo", "Tailwind CSS", "Firebase", "AWS", "Stripe"],
+    techStack: ["web_development/react-expo.png", "web_development/tailwindcss.png", "web_development/firebase.png", "web_development/aws.jpg", "web_development/stripe.jpg",]
   },
   {
     title: "Music Sheets to MIDI Files",
