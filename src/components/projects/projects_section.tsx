@@ -5,9 +5,19 @@ import ToggleSwitch from '../ToggleSwitch';
 
 const projectItems = [
   {
+    title: "koob",
+    role: "CTO",
+    date: "Oct. 2026 - Current",
+    description: "Trips are better borrowed. koob lets travelers browse real itineraries from people who've actually been, drag their best days into a trip of their own, then publish it for the next person. As CTO, I lead the technical direction and build out the platform end to end.",
+    imageURL: "projects/koob.png",
+    websiteURL: "https://koob.rest",
+    videoURL: "",
+    githubURL: ""
+  },
+  {
     title: "Guitar Tab Transformer",
     role: "Researcher",
-    date: "June 2024 - Current",
+    date: "June 2024 - Oct. 2026",
     description: "As an avid guitarist, I've decided to take on the challenge of designing a transformer model to automatically transpose any song into guitar tabs from the audio file. I am currently collaborating with Claude Hu, a machine learning researcher at University of Virginia. So far, we have been modifying dadaGP, an open source package to process guitar pro files to feed into our tokenizer and eventually our custom transformer model.",
     imageURL: "projects/guitar-tab-transformer.jpeg",
     websiteURL: "https://pypi.org/project/acoustic-solo-dadaGP/",
@@ -46,7 +56,7 @@ const projectItems = [
   {
     title: "Beya",
     role: "Software Engineer",
-    date: "Nov. 2024 - Current",
+    date: "Nov. 2024 - Oct. 2026",
     description: "Supporting small businesses with inventory management, CRMs, and analytics. Built custom RAG pipeline to allow users to edit and deploy custom websites. Generated over 20k ARR.",
     imageURL: "projects/beya-logo.png",
     websiteURL: "https://usebeya.com/",
